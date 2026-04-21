@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-presentations",
+          title: "presentations",
+          description: "invited talks, conference presentations, and posters",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/presentations/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Curriculum vitae. A PDF version is available at the top of the page.",
