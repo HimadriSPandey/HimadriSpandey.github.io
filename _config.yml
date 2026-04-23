@@ -8,7 +8,7 @@ baseurl: ""
 author:
   name: Himadri S. Pandey
   email: hpandey30 at gatech dot edu
-  photo: /assets/images/profile.jpg
+  photo: /assets/images/profile.png
   titles:
     - title: PhD Student, Machine Learning
   dept: H. Milton Stewart School of Industrial and Systems Engineering
@@ -18,9 +18,9 @@ author:
 
 # Social links (leave blank or remove to hide)
 social:
-  google_scholar: "https://scholar.google.com/citations?user=EO4x9SYAAAAJ"
-  github: "https://github.com/pandeyhs"
-  linkedin: "https://www.linkedin.com/in/himadri-pandey/"
+  google_scholar: "https://scholar.google.com/citations?user=kS1eMMYAAAAJ&hl=en"
+  github: "https://github.com/HimadriSPandey"
+  linkedin: "https://www.linkedin.com/in/himadri-s-pandey/"
 
 # Build settings
 markdown: kramdown
