@@ -1,0 +1,136 @@
+<section id="publications">
+    <div class="section-container reveal">
+        <h2 class="section-title">Publications</h2>
+
+        <div class="pub-filter">
+            <label for="pub-category-filter">Filter by type:</label>
+            <select id="pub-category-filter" onchange="filterPublications()">
+                <option value="sel">Selected Publications</option>
+                <option value="seq">Sequential Decision-Making & RL</option>
+                <option value="hc">Healthcare Applications</option>
+                <option value="method">ML Methodology</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+        <div class="pub-filter-note">
+            <a href="{{ site.social.google_scholar }}" target="_blank">Google Scholar</a> | <em>* indicates authors with equal contribution</em>
+        </div>
+
+        {% for pub in site.data.publications %}
+        <div class="pub-item" data-categories="{% if pub.category %}{{ pub.category | join: ',' }}{% endif %}">
+            <div class="pub-content-wrapper">
+                {% if pub.thumbnail %}
+                <div class="pub-thumbnail">
+                    <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title }} thumbnail">
+                </div>
+                {% endif %}
+                <div class="pub-content">
+                    <div class="pub-title">
+                        {% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+                        {% if pub.year %}<span class="pub-year">({{ pub.year }})</span>{% endif %}
+                    </div>
+                    <div class="pub-authors">
+                {% for author in pub.authors %}{% assign author_clean = author | replace: '*', '' | replace: '†', '' | strip %}{% if author_clean == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            </div>
+            <div class="pub-venue">
+                {{ pub.venue }}
+            </div>
+            {% if pub.keywords %}
+            <div class="pub-keywords">
+                <strong>Keywords:</strong> {{ pub.keywords | join: ", " }}
+            </div>
+            {% endif %}
+            {% if pub.colab %}
+            <div class="pub-colab">
+                <strong>Collaboration:</strong> {{ pub.colab | join: ", " }}
+            </div>
+            {% endif %}
+            {% if pub.award %}
+            <div class="pub-award-section">
+                {% if pub.award.first %}
+                {% for award_item in pub.award %}
+                🏆 {{ award_item }}<br>
+                {% endfor %}
+                {% else %}
+                🏆 {{ pub.award }}
+                {% endif %}
+            </div>
+            {% endif %}
+                    <div class="pub-links">
+                        {% if pub.abstract or pub.figure %}
+                        <button class="pub-link pub-toggle" onclick="toggleAbstract('pub-{{ forloop.index }}')">Abstract ▼</button>
+                        {% endif %}
+                {% if pub.preprint %}
+                <a href="{{ pub.preprint }}" class="pub-link">Preprint</a>
+                {% endif %}
+                {% if pub.full_paper %}
+                <a href="{{ pub.full_paper }}" class="pub-link">Full Paper</a>
+                {% endif %}
+                {% if pub.pdf %}
+                <a href="{{ pub.pdf }}" class="pub-link">PDF</a>
+                {% endif %}
+                {% if pub.slides %}
+                <a href="{{ pub.slides }}" class="pub-link">Slides</a>
+                {% endif %}
+                {% if pub.video %}
+                <a href="{{ pub.video }}" class="pub-link">Video</a>
+                {% endif %}
+                        {% if pub.code %}
+                        <a href="{{ pub.code }}" class="pub-link">Code</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% if pub.abstract or pub.figure %}
+            <div class="pub-abstract" id="pub-{{ forloop.index }}" style="display: none;">
+                {% if pub.figure %}
+                <div class="pub-figure">
+                    <img src="{{ pub.figure | relative_url }}" alt="{{ pub.title }} figure">
+                    {% if pub.figure_caption %}
+                    <div class="pub-figure-caption">{{ pub.figure_caption }}</div>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% if pub.abstract %}
+                <div class="pub-abstract-text">
+                    <strong>Abstract:</strong> {{ pub.abstract | markdownify }}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+    function filterPublications() {
+        const filter = document.getElementById('pub-category-filter').value;
+        const items = document.querySelectorAll('.pub-item');
+
+        items.forEach(item => {
+            const categories = item.dataset.categories ? item.dataset.categories.split(',') : [];
+            if (filter === 'all' || categories.includes(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    function toggleAbstract(id) {
+        const abstractDiv = document.getElementById(id);
+        const button = event.target;
+
+        if (abstractDiv.style.display === 'none') {
+            abstractDiv.style.display = 'block';
+            button.innerHTML = 'Abstract ▲';
+        } else {
+            abstractDiv.style.display = 'none';
+            button.innerHTML = 'Abstract ▼';
+        }
+    }
+
+    // Apply filter on page load
+    document.addEventListener('DOMContentLoaded', filterPublications);
+    </script>
+</section>

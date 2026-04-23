@@ -1,0 +1,18 @@
+# Teaching - organized by school
+# Fields:
+#   - school: School name
+#   - logo: Path to school logo (optional)
+#   - experiences: List of teaching experiences
+#     - title: Role/position title
+#     - items: List of specific items (col1, col2 [, col3], optional comment)
+
+- school: "@ Lucas Systems | Pittsburgh, PA, USA"
+  experiences:
+    - title: "Industry Training"
+      items:
+        - col1: "2021"
+          col2: "Docker 101"
+          comment: Internal training session on containerization for data science workflows.
+        - col1: "2020"
+          col2: "Machine Learning 101"
+          comment: Internal training session introducing ML fundamentals to engineering staff.

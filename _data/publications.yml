@@ -1,0 +1,82 @@
+# Publications (newest first)
+# Fields: title, authors (list), venue, year, category, keywords, colab, abstract,
+#         figure, figure_caption, award, preprint, full_paper, pdf, slides, video, code, url
+# Categories used in filter: sel (Selected), seq (Sequential Decision-Making), hc (Healthcare), method (Methods), all
+
+- title: |
+    Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets
+  year: 2025
+  authors:
+    - Himadri S. Pandey
+    - Kai Wang
+    - Gian-Gabriel P. Garcia
+  venue: Working paper
+  keywords: [Restless Multi-Action Bandits, Heterogeneous Budgets, Neural Index Policies, Clinical Deterioration]
+  colab: ["Georgia Tech"]
+  category: [sel, seq, hc, method]
+
+- title: |
+    CompACT: Comprehensive Assessment under Constrained Time for Concussion Diagnosis
+  year: 2025
+  authors:
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+    - Landon Lempke
+    - Michael A. McCrea
+    - Thomas W. McAllister
+    - Steven P. Broglio
+    - CARE Consortium Investigators
+  venue: Under Review — IISE Transactions
+  keywords: [Concussion Diagnosis, Resource-Constrained Test Design, Decision-Focused Learning]
+  colab: ["Georgia Tech", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
+  category: [sel, hc, method]
+
+- title: |
+    Quantifying the Diagnostic Utility of Baseline Testing: An Analysis of Collegiate Athletes from the NCAA-DoD CARE Consortium Dataset
+  year: 2025
+  authors:
+    - Himadri S. Pandey
+    - Julianne D. Schmidt
+    - Robert C. Lynall
+    - Gian-Gabriel P. Garcia
+    - Michael A. McCrea
+    - Thomas W. McAllister
+    - Steven P. Broglio
+    - CARE Consortium Investigators
+  venue: The American Journal of Sports Medicine
+  keywords: [Concussion, Baseline Testing, Diagnostic Utility, Sports Medicine]
+  colab: ["Georgia Tech", "University of Georgia", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
+  full_paper: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
+  award:
+    - MIF Student Poster Competition Winner, INFORMS 2024
+  category: [sel, hc]
+
+- title: |
+    Optimizing Baseline and Post-Concussion Assessments Through Factor Structure Analysis: Findings from the NCAA-DoD CARE Consortium
+  year: 2023
+  authors:
+    - Landon B. Lempke
+    - Adrian J. Boltz
+    - Gian-Gabriel P. Garcia
+    - Reid A. Syrydiuk
+    - Himadri S. Pandey
+    - Michael A. McCrea
+    - Thomas W. McAllister
+    - Steven P. Broglio
+    - CARE Consortium Investigators
+  venue: The Clinical Neuropsychologist
+  keywords: [Concussion Assessment, Factor Analysis, Collegiate Athletes]
+  colab: ["University of Michigan", "Georgia Tech", "Medical College of Wisconsin", "Indiana University"]
+  category: [sel, hc]
+
+- title: |
+    Designing Interpretable Machine Learning Models Using Mixed Integer Programming
+  year: 2023
+  authors:
+    - Seung Ji Lee
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+  venue: Encyclopedia of Optimization (3rd Edition), Springer
+  keywords: [Interpretable Machine Learning, Mixed Integer Programming, Optimization]
+  colab: ["Georgia Tech"]
+  category: [method]

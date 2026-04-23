@@ -1,0 +1,19 @@
+# Academic service - organized by category
+# Fields:
+#   - title: Category title
+#   - items: List of specific items (col1, col2 [, col3], optional comment)
+
+- title: "University Service"
+  items:
+    - col1: ""
+      col2: "Bee Well Ambassador, H. Milton Stewart School of ISyE, Georgia Tech"
+      comment: |
+        Peer-led initiative supporting graduate-student mental health and well-being in ISyE.
+
+- title: "Mentoring"
+  items:
+    - col1: "2020 – 2022"
+      col2: "Mentor, two junior data scientists at Lucas Systems"
+      comment: |
+        Guided new hires through onboarding, model development, and production deployment.
+        Organized internal knowledge-sharing talks including *Machine Learning 101* and *Docker 101*.

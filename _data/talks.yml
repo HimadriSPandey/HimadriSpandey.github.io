@@ -1,0 +1,12 @@
+# Talks (newest first)
+# Fields: date, type (Talk/Keynote/Poster/Tutorial), venue, venue_url, title, slides, video
+
+- date: "2024/10"
+  type: "Talk"
+  venue: "INFORMS Annual Meeting"
+  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
+
+- date: "2024/10"
+  type: "Poster"
+  venue: "MIF Student Poster Competition, INFORMS Annual Meeting"
+  title: "Quantifying the Diagnostic Utility of Baseline Testing — 1st Place"

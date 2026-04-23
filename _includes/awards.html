@@ -1,0 +1,32 @@
+<section id="awards">
+    <div class="section-container reveal">
+        <h2 class="section-title">Awards</h2>
+
+        {% assign awards_by_year = site.data.awards | group_by: "year" | sort: "name" | reverse %}
+
+        {% for year_group in awards_by_year %}
+        <div class="award-year-group">
+            <p class="award-year-header">{{ year_group.name }}</p>
+            <ul class="awards-list">
+                {% for award in year_group.items %}
+                <li class="award-item-wrapper">
+                    <div class="award-item">
+                        {% if award.type == "paper" %}
+                            <i class="fas fa-medal award-icon award-icon-personal"></i>
+                        {% else %}
+                            <i class="fas fa-medal award-icon award-icon-personal"></i>
+                        {% endif %}
+                        <span class="award-title">{{ award.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+                    </div>
+                    {% if award.comment %}
+                    <div class="award-comment-wrapper">
+                        {{ award.comment | markdownify }}
+                    </div>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</section>
