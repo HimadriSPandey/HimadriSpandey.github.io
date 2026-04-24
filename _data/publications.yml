@@ -16,7 +16,7 @@
   category: [sel, seq, hc, method]
 
 - title: |
-    CompACT: Comprehensive Assessment under Constrained Time for Concussion Diagnosis
+    So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints
   year: 2025
   authors:
     - Himadri S. Pandey
@@ -52,6 +52,21 @@
   category: [sel, hc]
 
 - title: |
+    Value of Baseline Testing in Concussion Diagnosis
+  year: 2024
+  authors:
+    - Himadri S. Pandey
+    - Bardia Lahijanian
+    - Julianne D. Schmidt
+    - Robert C. Lynall
+    - Steven P. Broglio
+    - Gian-Gabriel P. Garcia
+  venue: Medicine & Science in Sports & Exercise (ACSM Annual Meeting Abstract)
+  keywords: [Concussion, Baseline Testing, Sports Medicine]
+  colab: ["Georgia Tech", "University of Georgia", "University of Michigan"]
+  category: [hc]
+
+- title: |
     Optimizing Baseline and Post-Concussion Assessments Through Factor Structure Analysis: Findings from the NCAA-DoD CARE Consortium
   year: 2023
   authors:
@@ -79,4 +94,49 @@
   venue: Encyclopedia of Optimization (3rd Edition), Springer
   keywords: [Interpretable Machine Learning, Mixed Integer Programming, Optimization]
   colab: ["Georgia Tech"]
+  category: [method]
+
+- title: |
+    A Python Upgrade to the GooFit Package for Parallel Fitting
+  year: 2019
+  authors:
+    - Henry Schreiner
+    - Himadri S. Pandey
+    - Michael Sokoloff
+    - Karen Tomko
+    - Christoph Hasse
+    - Bradley Hittle
+  venue: EPJ Web of Conferences
+  keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center"]
+  category: [method]
+
+- title: |
+    A Python Upgrade to the GooFit Package for Parallel Fitting
+  year: 2018
+  authors:
+    - Henry Schreiner
+    - Himadri S. Pandey
+    - Michael Sokoloff
+    - Karen Tomko
+    - Christoph Hasse
+    - Bradley Hittle
+  venue: CHEP 2018 Proceedings
+  keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center"]
+  category: [method]
+
+- title: |
+    GooFit 2.0
+  year: 2018
+  authors:
+    - Henry Schreiner
+    - Christoph Hasse
+    - Bradley Hittle
+    - Himadri S. Pandey
+    - Michael Sokoloff
+    - Karen Tomko
+  venue: Journal of Physics&#58; Conference Series
+  keywords: [GooFit, Parallel Computing, High-Energy Physics]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center"]
   category: [method]

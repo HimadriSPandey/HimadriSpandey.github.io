@@ -3,12 +3,25 @@
 #   - title: Category title
 #   - items: List of specific items (col1, col2 [, col3], optional comment)
 
+- title: "Conference & Professional Service"
+  items:
+    - col1: "2024, 2026"
+      col2: "Session Chair, INFORMS Annual Meeting"
+
 - title: "University Service"
   items:
-    - col1: ""
+    - col1: "2024 – Present"
       col2: "Bee Well Ambassador, H. Milton Stewart School of ISyE, Georgia Tech"
       comment: |
         Peer-led initiative supporting graduate-student mental health and well-being in ISyE.
+    - col1: "Sep 2015 – May 2019"
+      col2: "President & HABSat-1 ADACS Co-Lead, UC CubeCats, University of Cincinnati"
+      comment: |
+        Led the organization's educational mission in spacecraft engineering through CubeSat and
+        high-altitude-balloon payload development. Raised over $150,000 in grants, donations, and
+        fundraising for two CubeSat missions; secured launch for a CubeSat and submitted a NASA
+        CSLI proposal. Designed the attitude-control system for a hyper-spectral earth-imaging
+        nano-satellite (Best Senior Design Project, CEAS-Expo).
 
 - title: "Mentoring"
   items:

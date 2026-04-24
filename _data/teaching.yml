@@ -6,6 +6,14 @@
 #     - title: Role/position title
 #     - items: List of specific items (col1, col2 [, col3], optional comment)
 
+- school: "@ Georgia Institute of Technology | Atlanta, GA, USA"
+  experiences:
+    - title: "Instructor"
+      items:
+        - col1: "Summer 2026"
+          col2: "Machine Learning"
+          comment: Instructor of record for the Machine Learning course at Georgia Tech.
+
 - school: "@ Lucas Systems | Pittsburgh, PA, USA"
   experiences:
     - title: "Industry Training"
@@ -16,3 +24,25 @@
         - col1: "2020"
           col2: "Machine Learning 101"
           comment: Internal training session introducing ML fundamentals to engineering staff.
+
+- school: "@ University of Cincinnati | Cincinnati, OH, USA"
+  experiences:
+    - title: "SRS Leader & Math/Science Tutor, MASS Center"
+      items:
+        - col1: "2015 – 2019"
+          col2: "Calculus, Data Structures, and Programming"
+          comment: |
+            Taught weekly sessions and tutored first- and second-year undergraduates;
+            developed problem-solving skills and study strategies through one-on-one mentoring.
+    - title: "Coding Mentor, Google Ignite CS — Bearcat Coders"
+      items:
+        - col1: "Aug 2015 – Dec 2016"
+          col2: "High-School Coding Outreach"
+          comment: |
+            Mentored and taught coding tools to high-school students; guided capstone projects
+            (applications, websites, games).
+    - title: "Peer Leader"
+      items:
+        - col1: "Aug 2016 – Dec 2016"
+          col2: "Freshman Engineering Mentor"
+          comment: Mentored 40 freshman engineering students and provided academic support.

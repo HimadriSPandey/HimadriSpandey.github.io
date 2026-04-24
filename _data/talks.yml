@@ -2,11 +2,21 @@
 # Fields: date, type (Talk/Keynote/Poster/Tutorial), venue, venue_url, title, slides, video
 
 - date: "2024/10"
-  type: "Talk"
-  venue: "INFORMS Annual Meeting"
-  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
+  type: "Poster"
+  venue: "MIF Student Poster Competition, INFORMS Annual Meeting, Seattle, WA"
+  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets — Winner"
 
 - date: "2024/10"
-  type: "Poster"
-  venue: "MIF Student Poster Competition, INFORMS Annual Meeting"
-  title: "Quantifying the Diagnostic Utility of Baseline Testing — 1st Place"
+  type: "Talk"
+  venue: "INFORMS Healthcare / Annual Meeting"
+  title: "Comprehensive Assessment under Constrained Time for Concussion Diagnosis"
+
+- date: "2018"
+  type: "Talk"
+  venue: "DIANA-HEP Workshop"
+  title: "Using GooFit with Python"
+
+- date: "2018/07"
+  type: "Talk"
+  venue: "CHEP 2018 (Computing in High-Energy Physics), Sofia, Bulgaria"
+  title: "A Python Upgrade to the GooFit Package for Parallel Fitting"

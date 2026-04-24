@@ -5,18 +5,34 @@
 #   - type: "paper" or "personal"
 #   - comment: Optional additional note (shown as a bullet point below)
 
+
 - title: |
-    **George Family Fellowship** for *Research Excellence in Healthcare Systems*, Georgia Tech
+    **Finalist, Lee B. Lusted Student Prize Competition**, SMDM Annual Meeting
+  year: 2026
+  type: paper
+
+- title: |
+    **Finalist, 3 Minute Thesis (3MT) Competition**, Georgia Tech
+  year: 2026
+  type: personal
+
+- title: |
+    **Phillip J. and Delores A. Scott Graduate Student Health and Wellness Award**, ISyE, Georgia Tech
+  year: 2026
+  type: personal
+
+- title: |
+    **George Family Fellowship** for *Research Excellence in Healthcare Systems*, ISyE, Georgia Tech
   year: 2025
   type: personal
 
 - title: |
-    **Phillip J. and Delores A. Scott Graduate Student Health and Wellness Award**, Georgia Tech
+    **Phillip J. and Delores A. Scott Graduate Student Health and Wellness Award**, ISyE, Georgia Tech
   year: 2025
   type: personal
 
 - title: |
-    **MIF Student Poster Competition** (Winner), INFORMS Annual Meeting
+    **Winner, MIF Best Student Poster Competition**, INFORMS Annual Meeting
   year: 2024
   type: paper
   comment: |
@@ -55,4 +71,34 @@
 - title: |
     **University Honors Scholar**, University of Cincinnati
   year: 2019
+  type: personal
+
+- title: |
+    **CRA-W Grace Hopper Celebration Scholar**
+  year: 2018
+  type: personal
+
+- title: |
+    **DIANA-HEP Fellowship**
+  year: 2018
+  type: personal
+
+- title: |
+    **SmallSat Student Award**, Small Satellite Conference
+  year: 2017
+  type: personal
+
+- title: |
+    **SmallSat Student Award**, Small Satellite Conference
+  year: 2016
+  type: personal
+
+- title: |
+    **UC CEAS International Outreach Scholarship**, University of Cincinnati (2015–2019)
+  year: 2015
+  type: personal
+
+- title: |
+    **Dean's List** (7/8 semesters), University of Cincinnati, CEAS (2015–2018)
+  year: 2015
   type: personal
