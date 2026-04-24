@@ -159,7 +159,7 @@ nav {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 380px 1fr;
     gap: 4rem;
     align-items: start;
 }
@@ -169,8 +169,8 @@ nav {
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.5rem;
