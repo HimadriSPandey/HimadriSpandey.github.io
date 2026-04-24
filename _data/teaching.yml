@@ -15,7 +15,7 @@
           col2: "ISyE 4600 - Methods and Applications of Machine Learning"
 
 - school: "@ University of Cincinnati | Cincinnati, OH, USA"
-- logo: assets/images/University-of-Cincinnati-Logo.png
+- logo: /assets/images/University-of-Cincinnati-Logo.png
 - experiences:
     - title: "Coding Mentor, Google Ignite CS — Bearcat Coders"
       items:
