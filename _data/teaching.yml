@@ -8,7 +8,7 @@
 
 - school: "@ Georgia Institute of Technology | Atlanta, GA, USA"
 - logo: /assets/images/logowseal-RGB.png
-  experiences:
+- experiences:
     - title: "Instructor"
       items:
         - col1: "Summer 2026"
@@ -16,7 +16,7 @@
 
 - school: "@ University of Cincinnati | Cincinnati, OH, USA"
 - logo: /assets/images/University_of_Cincinnati_Logo.png
-  experiences:
+- experiences:
     - title: "Coding Mentor, Google Ignite CS — Bearcat Coders"
       items:
         - col1: "Aug 2015 – Dec 2016"
