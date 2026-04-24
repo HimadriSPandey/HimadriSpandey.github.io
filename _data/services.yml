@@ -14,19 +14,12 @@
       col2: "Bee Well Ambassador, H. Milton Stewart School of ISyE, Georgia Tech"
       comment: |
         Peer-led initiative supporting graduate-student mental health and well-being in ISyE.
-    - col1: "Sep 2015 – May 2019"
-      col2: "President & HABSat-1 ADACS Co-Lead, UC CubeCats, University of Cincinnati"
-      comment: |
-        Led the organization's educational mission in spacecraft engineering through CubeSat and
-        high-altitude-balloon payload development. Raised over $150,000 in grants, donations, and
-        fundraising for two CubeSat missions; secured launch for a CubeSat and submitted a NASA
-        CSLI proposal. Designed the attitude-control system for a hyper-spectral earth-imaging
-        nano-satellite (Best Senior Design Project, CEAS-Expo).
 
-- title: "Mentoring"
-  items:
-    - col1: "2020 – 2022"
-      col2: "Mentor, two junior data scientists at Lucas Systems"
+    - col1: "2024 – 2025"
+      col2: "Graduate Student Representative, Emergine Leader Advisory Board, Georgia Tech"
       comment: |
-        Guided new hires through onboarding, model development, and production deployment.
-        Organized internal knowledge-sharing talks including *Machine Learning 101* and *Docker 101*.
+
+    - col1: "2023 – 2025"
+      col2: "Mental Health & Well-Being Committee, H. Milton Stewart School of ISyE, Georgia Tech"
+      comment: |
+        Served on the committee to promote mental health and well-being initiatives for graduate students at Georgia Tech.

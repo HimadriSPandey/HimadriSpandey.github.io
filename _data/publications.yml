@@ -10,9 +10,10 @@
     - Himadri S. Pandey
     - Kai Wang
     - Gian-Gabriel P. Garcia
-  venue: Working paper
+  venue: Under Review — ICML 2026
   keywords: [Restless Multi-Action Bandits, Heterogeneous Budgets, Neural Index Policies, Clinical Deterioration]
   colab: ["Georgia Tech"]
+  full_paper: "https://arxiv.org/abs/2510.22069"
   category: [sel, seq, hc, method]
 
 - title: |
@@ -21,14 +22,17 @@
   authors:
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
-    - Landon Lempke
+    - Paul F Pasquina
     - Michael A. McCrea
     - Thomas W. McAllister
     - Steven P. Broglio
+    - Landon B. Lempke
     - CARE Consortium Investigators
   venue: Under Review — IISE Transactions
   keywords: [Concussion Diagnosis, Resource-Constrained Test Design, Decision-Focused Learning]
   colab: ["Georgia Tech", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
+  award:
+    - MIF Student Poster Competition Winner, INFORMS 2024
   category: [sel, hc, method]
 
 - title: |
@@ -38,33 +42,17 @@
     - Himadri S. Pandey
     - Julianne D. Schmidt
     - Robert C. Lynall
-    - Gian-Gabriel P. Garcia
+    - Paul F Pasquina
     - Michael A. McCrea
     - Thomas W. McAllister
     - Steven P. Broglio
+    - Gian-Gabriel P. Garcia
     - CARE Consortium Investigators
   venue: The American Journal of Sports Medicine
   keywords: [Concussion, Baseline Testing, Diagnostic Utility, Sports Medicine]
   colab: ["Georgia Tech", "University of Georgia", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
   full_paper: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
-  award:
-    - MIF Student Poster Competition Winner, INFORMS 2024
   category: [sel, hc]
-
-- title: |
-    Value of Baseline Testing in Concussion Diagnosis
-  year: 2024
-  authors:
-    - Himadri S. Pandey
-    - Bardia Lahijanian
-    - Julianne D. Schmidt
-    - Robert C. Lynall
-    - Steven P. Broglio
-    - Gian-Gabriel P. Garcia
-  venue: Medicine & Science in Sports & Exercise (ACSM Annual Meeting Abstract)
-  keywords: [Concussion, Baseline Testing, Sports Medicine]
-  colab: ["Georgia Tech", "University of Georgia", "University of Michigan"]
-  category: [hc]
 
 - title: |
     Optimizing Baseline and Post-Concussion Assessments Through Factor Structure Analysis: Findings from the NCAA-DoD CARE Consortium
@@ -75,6 +63,7 @@
     - Gian-Gabriel P. Garcia
     - Reid A. Syrydiuk
     - Himadri S. Pandey
+    - Paul F Pasquina
     - Michael A. McCrea
     - Thomas W. McAllister
     - Steven P. Broglio
@@ -94,6 +83,7 @@
   venue: Encyclopedia of Optimization (3rd Edition), Springer
   keywords: [Interpretable Machine Learning, Mixed Integer Programming, Optimization]
   colab: ["Georgia Tech"]
+  full_paper: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_867-1"
   category: [method]
 
 - title: |
@@ -108,7 +98,8 @@
     - Bradley Hittle
   venue: EPJ Web of Conferences
   keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
-  colab: ["University of Cincinnati", "Ohio Supercomputer Center"]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "CERN"]
+  full_paper: "https://doi.org/10.1051/epjconf/201921405006"
   category: [method]
 
 - title: |
@@ -123,7 +114,7 @@
     - Bradley Hittle
   venue: CHEP 2018 Proceedings
   keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
-  colab: ["University of Cincinnati", "Ohio Supercomputer Center"]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "CERN"]
   category: [method]
 
 - title: |
@@ -138,5 +129,5 @@
     - Karen Tomko
   venue: Journal of Physics&#58; Conference Series
   keywords: [GooFit, Parallel Computing, High-Energy Physics]
-  colab: ["University of Cincinnati", "Ohio Supercomputer Center"]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "Technical University of Dortmund"]
   category: [method]
