@@ -13,6 +13,8 @@
   venue: Under Review — ICML 2026
   keywords: [Restless Multi-Action Bandits, Heterogeneous Budgets, Neural Index Policies, Clinical Deterioration]
   colab: ["Georgia Tech"]
+  award:
+    - Finalist, Lee B. Lusted Student Prize Competition (QMTD), SMDM 2026
   full_paper: "https://arxiv.org/abs/2510.22069"
   category: [sel, seq, hc, method]
 
