@@ -55,9 +55,11 @@
   type: personal
 
 - title: |
-    **David Cowan Scholarship**, Georgia Healthcare Information and Management Systems Society (HIMSS)
+    **David Cowan Scholarship**, Georgia Chapter of Healthcare Information and Management Systems Society (HIMSS)
   year: 2024
   type: personal
+  comment: |
+    [Award Details](https://georgia.himss.org/about/gahimss-david-cowan-scholarship-information)
 
 - title: |
     **Topper Fellowship** for *Incoming PhD Student*, Georgia Tech
@@ -88,6 +90,8 @@
     **DIANA-HEP Fellowship**
   year: 2018
   type: personal
+  comment: |
+    [Award Details](https://diana-hep.org/pages/fellows.html)
 
 - title: |
     **SmallSat Student Award**, Small Satellite Conference

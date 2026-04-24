@@ -7,33 +7,16 @@
 #     - items: List of specific items (col1, col2 [, col3], optional comment)
 
 - school: "@ Georgia Institute of Technology | Atlanta, GA, USA"
+- logo: /assets/images/logowseal-RGB.png
   experiences:
     - title: "Instructor"
       items:
         - col1: "Summer 2026"
-          col2: "Machine Learning"
-          comment: Instructor of record for the Machine Learning course at Georgia Tech.
-
-- school: "@ Lucas Systems | Pittsburgh, PA, USA"
-  experiences:
-    - title: "Industry Training"
-      items:
-        - col1: "2021"
-          col2: "Docker 101"
-          comment: Internal training session on containerization for data science workflows.
-        - col1: "2020"
-          col2: "Machine Learning 101"
-          comment: Internal training session introducing ML fundamentals to engineering staff.
+          col2: "ISyE 4600 - Methods and Applications of Machine Learning"
 
 - school: "@ University of Cincinnati | Cincinnati, OH, USA"
+- logo: /assets/images/University_of_Cincinnati_Logo.png
   experiences:
-    - title: "SRS Leader & Math/Science Tutor, MASS Center"
-      items:
-        - col1: "2015 – 2019"
-          col2: "Calculus, Data Structures, and Programming"
-          comment: |
-            Taught weekly sessions and tutored first- and second-year undergraduates;
-            developed problem-solving skills and study strategies through one-on-one mentoring.
     - title: "Coding Mentor, Google Ignite CS — Bearcat Coders"
       items:
         - col1: "Aug 2015 – Dec 2016"
