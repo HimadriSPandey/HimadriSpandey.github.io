@@ -4,6 +4,17 @@
 # Categories used in filter: sel (Selected), seq (Sequential Decision-Making), hc (Healthcare), method (Methods), all
 
 - title: |
+    Feature Ranking using MIP for Machine Learning Models
+  year: 2026
+  authors:
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+  venue: In Preparation
+  keywords: [Feature Ranking, Mixed Integer Programming, Interpretable ML]
+  colab: ["Georgia Tech"]
+  category: [method]
+
+- title: |
     Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets
   year: 2025
   authors:

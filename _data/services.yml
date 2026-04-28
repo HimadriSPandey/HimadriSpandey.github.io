@@ -5,15 +5,17 @@
 
 - title: "Session Chair"
   items:
-    - col1: "2024"
-      col2: "INFORMS Annual Meeting"
     - col1: "2026"
+      col2: "INFORMS Annual Meeting"
+    - col1: "2025"
+      col2: "IISE Annual Meeting"
+    - col1: "2024"
       col2: "INFORMS Annual Meeting"
 
 
 - title: "University Service"
   items:
-    - col1: "2024 – Present"
+    - col1: "2023 – Present"
       col2: "Bee Well Ambassador, H. Milton Stewart School of ISyE, Georgia Tech"
       comment: |
         Peer-led initiative supporting graduate-student mental health and well-being in ISyE.
@@ -39,3 +41,13 @@
   items:
     - col1: "2025"
       col2: "BMJ Open Sport & Exercise Medicine"
+
+- title: "Outreach"
+  items:
+    - col1: "Sep 2025"
+      col2: "Invited Speaker — OR Outreach, INFORMS Flash Research Talks, Morehouse College, Atlanta, GA"
+
+- title: "Student Organization Leadership"
+  items:
+    - col1: "May 2017 – May 2018"
+      col2: "President, UC CubeCats, University of Cincinnati"

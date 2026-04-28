@@ -1,14 +1,62 @@
 # Talks (newest first)
-# Fields: date, type (Talk/Keynote/Poster/Tutorial), venue, venue_url, title, slides, video
+# Fields: date, type (Talk/Keynote/Poster/Tutorial/Presentation), venue, venue_url, title, slides, video
 
+- date: "2026"
+  type: "Invited Talk"
+  venue: "INFORMS Healthcare Conference"
+  title: "Neural Index Policies for Multi-Action Restless Multi-Armed Bandits with Heterogeneous Budgets"
 
+- date: "2026"
+  type: "Invited Talk"
+  venue: "INFORMS Healthcare Conference"
+  title: "So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints"
+
+- date: "2026"
+  type: "Invited Talk"
+  venue: "INFORMS Optimization Society Conference"
+  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
+
+- date: "2026"
+  type: "Presentation"
+  venue: "SMDM Annual Meeting"
+  title: "Resource-Aware Decision Making for Pediatric Post-Surgical Monitoring via Neural Index Policies"
 
 - date: "2025"
-  type: "Presentation"
+  type: "Invited Talk"
   venue: "INFORMS Annual Meeting"
+  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
+
+- date: "Sep 2025"
+  type: "Invited Talk"
+  venue: "INFORMS Smarter Decisions for a Better World — Flash Research Talks, Morehouse College"
+  title: "OR Outreach Flash Talk"
+
+- date: "2024"
+  type: "Invited Talk"
+  venue: "INFORMS Annual Meeting"
+  title: "Resource Allocation"
+
+- date: "2024"
+  type: "Presentation"
+  venue: "ACSM Annual Meeting"
+  title: "Value of Baseline Testing in Concussion Diagnosis"
+
+- date: "2024"
+  type: "Poster"
+  venue: "MIF Student Poster Competition, INFORMS Annual Meeting (Winner)"
+  title: "Time-Constrained Concussion Diagnosis: An Analysis of the NCAA-DoD CARE Consortium Dataset"
 
 - date: "2023"
-  type: "Presentation"
+  type: "Invited Talk"
   venue: "INFORMS Annual Meeting"
+  title: "Optimizing Concussion Assessment: A Mixed-Integer Optimization Approach with Time Constraints"
 
+- date: "2018"
+  type: "Presentation"
+  venue: "Computing in High-Energy Physics (CHEP), Sofia, Bulgaria"
+  title: "A Python Upgrade to the GooFit Package for Parallel Fitting"
 
+- date: "2018"
+  type: "Invited Talk"
+  venue: "DIANA-HEP Workshop"
+  title: "Using GooFit with Python"
