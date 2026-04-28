@@ -1,0 +1,136 @@
+# Publications (newest first)
+# Fields: title, authors (list), venue, year, category, keywords, colab, abstract,
+#         figure, figure_caption, award, preprint, full_paper, pdf, slides, video, code, url
+# Categories used in filter: sel (Selected), seq (Sequential Decision-Making), hc (Healthcare), method (Methods), all
+
+- title: |
+    Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets
+  year: 2025
+  authors:
+    - Himadri S. Pandey
+    - Kai Wang
+    - Gian-Gabriel P. Garcia
+  venue: Under Review — ICML 2026
+  keywords: [Restless Multi-Action Bandits, Heterogeneous Budgets, Neural Index Policies, Clinical Deterioration]
+  colab: ["Georgia Tech"]
+  award:
+    - Finalist, Lee B. Lusted Student Prize Competition (QMTD), SMDM 2026
+  full_paper: "https://arxiv.org/abs/2510.22069"
+  category: [sel, seq, hc, method]
+
+- title: |
+    So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints
+  year: 2025
+  authors:
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+    - Paul F Pasquina
+    - Michael A. McCrea
+    - Thomas W. McAllister
+    - Steven P. Broglio
+    - Landon B. Lempke
+    - CARE Consortium Investigators
+  venue: Under Review — IISE Transactions
+  keywords: [Concussion Diagnosis, Resource-Constrained Test Design, Decision-Focused Learning]
+  colab: ["Georgia Tech", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
+  award:
+    - MIF Student Poster Competition Winner, INFORMS 2024
+  category: [sel, hc, method]
+
+- title: |
+    Quantifying the Diagnostic Utility of Baseline Testing: An Analysis of Collegiate Athletes from the NCAA-DoD CARE Consortium Dataset
+  year: 2025
+  authors:
+    - Himadri S. Pandey
+    - Julianne D. Schmidt
+    - Robert C. Lynall
+    - Paul F Pasquina
+    - Michael A. McCrea
+    - Thomas W. McAllister
+    - Steven P. Broglio
+    - Gian-Gabriel P. Garcia
+    - CARE Consortium Investigators
+  venue: The American Journal of Sports Medicine
+  keywords: [Concussion, Baseline Testing, Diagnostic Utility, Sports Medicine]
+  colab: ["Georgia Tech", "University of Georgia", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
+  full_paper: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
+  category: [sel, hc]
+
+- title: |
+    Optimizing Baseline and Post-Concussion Assessments Through Factor Structure Analysis: Findings from the NCAA-DoD CARE Consortium
+  year: 2023
+  authors:
+    - Landon B. Lempke
+    - Adrian J. Boltz
+    - Gian-Gabriel P. Garcia
+    - Reid A. Syrydiuk
+    - Himadri S. Pandey
+    - Paul F Pasquina
+    - Michael A. McCrea
+    - Thomas W. McAllister
+    - Steven P. Broglio
+    - CARE Consortium Investigators
+  venue: The Clinical Neuropsychologist
+  keywords: [Concussion Assessment, Factor Analysis, Collegiate Athletes]
+  colab: ["University of Michigan", "Georgia Tech", "Medical College of Wisconsin", "Indiana University"]
+  full_paper: "https://www.tandfonline.com/doi/abs/10.1080/13854046.2023.2271614"  
+  category: [sel, hc]
+
+- title: |
+    Designing Interpretable Machine Learning Models Using Mixed Integer Programming
+  year: 2023
+  authors:
+    - Seung Ji Lee
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+  venue: Encyclopedia of Optimization (3rd Edition), Springer
+  keywords: [Interpretable Machine Learning, Mixed Integer Programming, Optimization]
+  colab: ["Georgia Tech"]
+  full_paper: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_867-1"
+  category: [method]
+
+- title: |
+    A Python Upgrade to the GooFit Package for Parallel Fitting
+  year: 2019
+  authors:
+    - Henry Schreiner
+    - Himadri S. Pandey
+    - Michael Sokoloff
+    - Karen Tomko
+    - Christoph Hasse
+    - Bradley Hittle
+  venue: EPJ Web of Conferences
+  keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "CERN"]
+  full_paper: "https://doi.org/10.1051/epjconf/201921405006"
+  category: [method]
+
+- title: |
+    A Python Upgrade to the GooFit Package for Parallel Fitting
+  year: 2018
+  authors:
+    - Henry Schreiner
+    - Himadri S. Pandey
+    - Michael Sokoloff
+    - Karen Tomko
+    - Christoph Hasse
+    - Bradley Hittle
+  venue: CHEP 2018 Proceedings
+  keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "CERN"]
+  category: [method]
+
+- title: |
+    GooFit 2.0
+  year: 2018
+  authors:
+    - Henry Schreiner
+    - Christoph Hasse
+    - Bradley Hittle
+    - Himadri S. Pandey
+    - Michael Sokoloff
+    - Karen Tomko
+  venue: Journal of Physics&#58; Conference Series
+  keywords: [GooFit, Parallel Computing, High-Energy Physics]
+  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "Technical University of Dortmund"]
+  category: [method]

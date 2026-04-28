@@ -1,0 +1,41 @@
+# Academic service - organized by category
+# Fields:
+#   - title: Category title
+#   - items: List of specific items (col1, col2 [, col3], optional comment)
+
+- title: "Session Chair"
+  items:
+    - col1: "2024"
+      col2: "INFORMS Annual Meeting"
+    - col1: "2026"
+      col2: "INFORMS Annual Meeting"
+
+
+- title: "University Service"
+  items:
+    - col1: "2024 – Present"
+      col2: "Bee Well Ambassador, H. Milton Stewart School of ISyE, Georgia Tech"
+      comment: |
+        Peer-led initiative supporting graduate-student mental health and well-being in ISyE.
+
+    - col1: "2024 – 2025"
+      col2: "Graduate Student Representative, Emerging Leaders Advisory Board, Georgia Tech"
+      comment: |
+        Met monthly with Georgia Tech administrators to provide graduate-student input on
+        policies, programs, and resources — including graduate funding models, housing,
+        career development, international student engagement, and well-being initiatives.
+
+    - col1: "2023 – 2025"
+      col2: "Mental Health & Well-Being Committee, Graduate Student Government Association, Georgia Tech"
+      comment: |
+        Served on the committee to promote mental health and well-being initiatives for graduate students at Georgia Tech.
+
+- title: "Conference Abstract Reviewer"
+  items:
+    - col1: "2026"
+      col2: "SMDM Annual Meeting"
+
+- title: "Journal Reviewer"
+  items:
+    - col1: "2025"
+      col2: "BMJ Open Sport & Exercise Medicine"

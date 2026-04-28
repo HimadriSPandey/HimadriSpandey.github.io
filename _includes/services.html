@@ -1,0 +1,38 @@
+<section id="services">
+    <div class="section-container reveal">
+        <h2 class="section-title">Academic Service</h2>
+
+        {% for category in site.data.services %}
+        <div class="service-category">
+            <h3>{{ category.title }}</h3>
+            {% if category.items %}
+            <table class="service-items-table">
+                {% for item in category.items %}
+                <tr class="service-item-row">
+                    {% if item.col1 and item.col1 != "" %}
+                    <td class="service-col1">{{ item.col1 }}</td>
+                    <td class="service-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+                    {% endif %}
+                    <td class="service-col2">{{ item.col2 }}</td>
+                    {% if item.col3 %}
+                    <td class="service-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+                    <td class="service-col3">{{ item.col3 }}</td>
+                    {% endif %}
+                </tr>
+                {% if item.comment %}
+                <tr class="service-comment-row">
+                    <td colspan="5" class="service-item-comment">
+                        <span class="service-comment-bullet">•</span>
+                        {{ item.comment | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+                    </td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>{{ category.content }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

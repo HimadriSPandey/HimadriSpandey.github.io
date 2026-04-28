@@ -1,0 +1,44 @@
+<section id="teaching">
+    <div class="section-container reveal">
+        <h2 class="section-title">Teaching</h2>
+
+        {% for school in site.data.teaching %}
+        <div class="teaching-school-group">
+            <div class="teaching-school-header">
+                <span class="teaching-school-name">{{ school.school }}</span>
+                {% if school.logo %}
+                <img src="{{ school.logo }}" alt="{{ school.school }} logo" class="teaching-school-logo">
+                {% endif %}
+            </div>
+            {% for exp in school.experiences %}
+            <div class="teaching-experience">
+                <span class="teaching-title">{{ exp.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+                {% if exp.items %}
+                <table class="teaching-items-table">
+                    {% for item in exp.items %}
+                    <tr class="teaching-item-row">
+                        <td class="teaching-col1">{{ item.col1 }}</td>
+                        <td class="teaching-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+                        <td class="teaching-col2">{{ item.col2 }}</td>
+                        {% if item.col3 %}
+                        <td class="teaching-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+                        <td class="teaching-col3">{{ item.col3 }}</td>
+                        {% endif %}
+                    </tr>
+                    {% if item.comment %}
+                    <tr class="teaching-comment-row">
+                        <td colspan="5" class="teaching-item-comment">
+                            <span class="teaching-comment-bullet">•</span>
+                            {{ item.comment | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+                        </td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,14 @@
+# Talks (newest first)
+# Fields: date, type (Talk/Keynote/Poster/Tutorial), venue, venue_url, title, slides, video
+
+
+
+- date: "2025"
+  type: "Presentation"
+  venue: "INFORMS Annual Meeting"
+
+- date: "2023"
+  type: "Presentation"
+  venue: "INFORMS Annual Meeting"
+
+

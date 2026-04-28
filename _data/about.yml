@@ -1,0 +1,38 @@
+# Your bio/about content (supports Markdown)
+content: |
+  I am a **PhD student in Machine Learning** at **Georgia Tech**, based in the
+  [H. Milton Stewart School of Industrial and Systems Engineering](https://www.isye.gatech.edu/),
+  advised by **[Dr. Gian-Gabriel Garcia](https://giangabrielgarcia.com/)**. My research sits at the intersection of
+  **decision-focused learning**, **sequential decision-making under uncertainty**, and
+  **reinforcement learning**, with a focus on **healthcare applications** where decisions
+  are shaped by limited resources and noisy observations.
+
+  Current projects include learning **neural index policies for restless multi-action
+  bandits** with heterogeneous budgets (with applications to clinical deterioration in
+  hospitalized children), **resource-constrained diagnostic test design**.
+
+  <hr class="bio-separator">
+
+  Before starting my PhD, I worked as an **Applied Scientist** at
+  [Lucas Systems](https://www.lucasware.com/) (2019&ndash;2022) building optimization and ML
+  tools for warehouse operations. I received my B.S. in Computer Science (with minors in Mathematics and Physics) from the
+  **University of Cincinnati** in 2019.
+
+  <hr class="bio-separator">
+
+# News items (newest first)
+# Each item has: date (YYYY-MM format), content (supports Markdown)
+news:
+  - date: "2026-04"
+    content:
+      Selected as a **[Finalist](https://grad.gatech.edu/news/2026-three-minute-thesis-finalists-announced)**
+      in the [Georgia Tech 3 Minute Thesis (3MT) Competition](https://www.grad.gatech.edu/3mt).
+  - date: "2026-03"
+    content:
+      Received The Philip J. and Delores A. Scott Graduate Student Health and Wellness Award
+      from ISyE for my work on support mental health and wellness in the ISyE PhD program.
+  - date: "2025-08"
+    content:
+      Wrapped up my summer as an **Applied Scientist Intern** at [AWS](https://aws.amazon.com/),
+      where I built AWS's first time-series forecasting framework for ML traffic between
+      EC2 and S3 GPU fabrics.

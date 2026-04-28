@@ -1,0 +1,19 @@
+<section id="talks">
+    <div class="section-container reveal">
+        <h2 class="section-title">Invited Talks</h2>
+        <table class="talks-table">
+            {% for talk in site.data.talks %}
+            <tr class="talk-row">
+                <td class="talk-date">{{ talk.date }}</td>
+                <td class="talk-content">
+                    {{ talk.type | default: "Talk" }} at
+                    {% if talk.venue_url %}<a href="{{ talk.venue_url }}">{{ talk.venue }}</a>{% else %}{{ talk.venue }}{% endif %}
+                    on "{{ talk.title }}"
+                    {% if talk.slides %}<a href="{{ talk.slides | relative_url }}">[Slides]</a>{% endif %}
+                    {% if talk.video %}<a href="{{ talk.video }}">[Video]</a>{% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</section>

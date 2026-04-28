@@ -1,0 +1,31 @@
+# Teaching - organized by school
+# Fields:
+#   - school: School name
+#   - logo: Path to school logo (optional)
+#   - experiences: List of teaching experiences
+#     - title: Role/position title
+#     - items: List of specific items (col1, col2 [, col3], optional comment)
+
+- school: "@ Georgia Institute of Technology | Atlanta, GA, USA"
+  logo: /assets/images/logowseal-RGB.png
+  experiences:
+    - title: "Instructor"
+      items:
+        - col1: "Summer 2026"
+          col2: "ISyE 4600 - Methods and Applications of Machine Learning"
+
+- school: "@ University of Cincinnati | Cincinnati, OH, USA"
+  logo: /assets/images/University-of-Cincinnati-Logo.png
+  experiences:
+    - title: "Coding Mentor, Google Ignite CS — Bearcat Coders"
+      items:
+        - col1: "Aug 2015 – Dec 2016"
+          col2: "High-School Coding Outreach"
+          comment: |
+            Mentored and taught coding tools to high-school students; guided capstone projects
+            (applications, websites, games).
+    - title: "Peer Leader"
+      items:
+        - col1: "Aug 2016 – Dec 2016"
+          col2: "Freshman Engineering Mentor"
+          comment: Mentored 40 freshman engineering students and provided academic support.
