@@ -29,3 +29,8 @@
         - col1: "Aug 2016 – Dec 2016"
           col2: "Freshman Engineering Mentor"
           comment: Mentored 40 freshman engineering students and provided academic support.
+    - title: "Mentor, CATiSE — UC CubeCats"
+      items:
+        - col1: "Aug 2016 – Dec 2016"
+          col2: "CubeSat Engineering Mentor"
+          comment: Mentored students in the CATiSE program of UC CubeCats on small-satellite engineering and project work.
