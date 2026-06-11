@@ -23,6 +23,10 @@ content: |
 # News items (newest first)
 # Each item has: date (YYYY-MM format), content (supports Markdown)
 news:
+  - date: "2026-06"
+    content:
+      Paper **[So Many Tests, So Little Time&#58; Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints](https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282)**
+      has been published in **IISE Transactions**!
   - date: "2026-04"
     content:
       Selected as a **[Finalist](https://grad.gatech.edu/news/2026-three-minute-thesis-finalists-announced)**
