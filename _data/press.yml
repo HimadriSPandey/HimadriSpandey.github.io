@@ -1,0 +1,18 @@
+# In the News — articles written about me or my work (newest first)
+# Fields: date, outlet, title, url, note (optional, supports Markdown)
+
+- date: "Sep 2026"
+  outlet: "Georgia Tech Research News"
+  title: "AI Tool Aims to Catch Critically Ill Children"
+  url: "https://news.research.gatech.edu/2026/09/15/ai-tool-aims-catch-critically-ill-children"
+  note: "Feature on the ACCORD project with Children's Healthcare of Atlanta. Also syndicated on [Newswise](https://www.newswise.com/articles/ai-tool-aims-to-catch-critically-ill-children)."
+
+- date: "Mar 2026"
+  outlet: "Georgia Tech Graduate Studies"
+  title: "2026 Three Minute Thesis Finalists Announced"
+  url: "https://grad.gatech.edu/news/2026-three-minute-thesis-finalists-announced"
+
+- date: "Nov 2024"
+  outlet: "Georgia Tech ISyE News"
+  title: "Georgia Tech ISyE Celebrates Top Wins at 2024 INFORMS Annual Meeting"
+  url: "https://www.isye.gatech.edu/news/georgia-tech-isye-celebrates-top-wins-2024-informs-annual-meeting"

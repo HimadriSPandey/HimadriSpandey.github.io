@@ -23,6 +23,14 @@ content: |
 # News items (newest first)
 # Each item has: date (YYYY-MM format), content (supports Markdown)
 news:
+  - date: "2026-09"
+    content:
+      Submitted **Who Gets Watched? Allocating Scarce Escalation Resources on Pediatric Wards with Neural Index Policies**
+      to **Manufacturing & Service Operations Management (M&SOM)** for the 2027 Practice-Based Research Competition.
+  - date: "2026-09"
+    content:
+      Our ACCORD project with Children's Healthcare of Atlanta was featured by
+      **[Georgia Tech Research News](https://news.research.gatech.edu/2026/09/15/ai-tool-aims-catch-critically-ill-children)**.
   - date: "2026-06"
     content:
       Paper **[So Many Tests, So Little Time&#58; Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints](https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282)**
