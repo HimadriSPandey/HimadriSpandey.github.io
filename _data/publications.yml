@@ -28,7 +28,6 @@
   colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
   award:
     - Finalist, Lee B. Lusted Student Prize Competition (QMTD), SMDM 2026
-  full_paper: "https://arxiv.org/abs/2510.22069"
   category: [sel, seq, hc, method]
 
 - title: |
