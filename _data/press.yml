@@ -16,3 +16,19 @@
   outlet: "Georgia Tech ISyE News"
   title: "Georgia Tech ISyE Celebrates Top Wins at 2024 INFORMS Annual Meeting"
   url: "https://www.isye.gatech.edu/news/georgia-tech-isye-celebrates-top-wins-2024-informs-annual-meeting"
+
+- date: "Mar 2018"
+  outlet: "UC Magazine"
+  title: "This cat is ready to roar"
+  url: "https://magazine.uc.edu/editors_picks/recent_features/cubecats.html"
+  note: "Feature on UC CubeCats and my path from wanting to be an astronaut to building CubeSats."
+
+- date: "Feb 2018"
+  outlet: "WVXU (Cincinnati Public Radio)"
+  title: "These UC Students Want To Help NASA Get To Mars"
+  url: "https://www.wvxu.org/local-news/2018-02-26/these-uc-students-want-to-help-nasa-get-to-mars"
+
+- date: "Feb 2018"
+  outlet: "The News Record"
+  title: "UC club attempts to launch satellite into space"
+  url: "https://www.newsrecord.org/news/uc-club-attempts-to-launch-satellite-into-space/article_3750a1a6-16f8-11e8-a328-4b14855332dd.html"
