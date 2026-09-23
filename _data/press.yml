@@ -1,16 +1,19 @@
 # In the News — articles written about me or my work (newest first)
-# Fields: date, outlet, title, url, note (optional, supports Markdown)
+# Fields: date, outlet, title, url, image (optional, path under /assets/images/press/),
+#         note (optional, supports Markdown)
 
 - date: "Sep 2026"
   outlet: "Georgia Tech Research News"
   title: "AI Tool Aims to Catch Critically Ill Children"
   url: "https://news.research.gatech.edu/2026/09/15/ai-tool-aims-catch-critically-ill-children"
+  image: "/assets/images/press/gt-accord.jpg"
   note: "Feature on the ACCORD project with Children's Healthcare of Atlanta. Also syndicated on [Newswise](https://www.newswise.com/articles/ai-tool-aims-to-catch-critically-ill-children)."
 
 - date: "Apr 2026"
   outlet: "University of Cincinnati News"
   title: "UC CubeCats satellite makes hiss-tory at NASA"
   url: "https://www.uc.edu/news/articles/2026/04/uc-student-built-satellite-prepares-for-lift-off-on-april-8.html"
+  image: "/assets/images/press/uc-2026-04.jpg"
   note: "Coverage of UC CubeCats, the student satellite program I led as president."
 
 - date: "Mar 2026"
@@ -22,29 +25,34 @@
   outlet: "University of Cincinnati News"
   title: "UC to launch first student-led satellite with NASA"
   url: "https://www.uc.edu/news/articles/2026/01/uc-to-launch-first-student-led-satellite-with-nasa.html"
+  image: "/assets/images/press/uc-2026-01.jpg"
   note: "Coverage of UC CubeCats, the student satellite program I led as president."
 
 - date: "Mar 2025"
   outlet: "University of Cincinnati News"
   title: "UC students create and launch satellites"
   url: "https://www.uc.edu/news/articles/2025/03/uc-students-create-and-launch-satellites.html"
+  image: "/assets/images/press/uc-2025-03.jpg"
   note: "Coverage of UC CubeCats, the student satellite program I led as president."
 
 - date: "Nov 2024"
   outlet: "Georgia Tech ISyE News"
   title: "Georgia Tech ISyE Celebrates Top Wins at 2024 INFORMS Annual Meeting"
   url: "https://www.isye.gatech.edu/news/georgia-tech-isye-celebrates-top-wins-2024-informs-annual-meeting"
+  image: "/assets/images/press/isye-informs.jpg"
 
 - date: "May 2022"
   outlet: "FreightWaves (Modern Shipper)"
   title: "Viewpoint: Get more dynamic with your slotting"
   url: "https://www.freightwaves.com/news/viewpoint-get-more-dynamic-with-your-slotting"
+  image: "/assets/images/press/freightwaves.jpg"
   note: "Op-ed I wrote as an Applied Scientist at Lucas Systems on AI-driven warehouse slotting."
 
 - date: "Mar 2018"
   outlet: "UC Magazine"
   title: "This cat is ready to roar"
   url: "https://magazine.uc.edu/editors_picks/recent_features/cubecats.html"
+  image: "/assets/images/press/ucmag-himadri.jpg"
   note: "Feature on UC CubeCats and my path from wanting to be an astronaut to building CubeSats."
 
 - date: "Mar 2018"
@@ -57,14 +65,17 @@
   outlet: "The News Record"
   title: "CubeCats satellite is a go for launch"
   url: "https://www.newsrecord.org/news/cubecats-satellite-is-a-go-for-launch/article_3058ce2c-23e7-11e8-87a8-f7fc67c39a44.html"
+  image: "/assets/images/press/newsrecord-cubecats.jpg"
   note: "Coverage of UC CubeCats, the student satellite program I led as president."
 
 - date: "Feb 2018"
   outlet: "WVXU (Cincinnati Public Radio)"
   title: "These UC Students Want To Help NASA Get To Mars"
   url: "https://www.wvxu.org/local-news/2018-02-26/these-uc-students-want-to-help-nasa-get-to-mars"
+  image: "/assets/images/press/wvxu-cubesat.jpg"
 
 - date: "Feb 2018"
   outlet: "The News Record"
   title: "UC club attempts to launch satellite into space"
   url: "https://www.newsrecord.org/news/uc-club-attempts-to-launch-satellite-into-space/article_3750a1a6-16f8-11e8-a328-4b14855332dd.html"
+  image: "/assets/images/press/newsrecord-cubecats.jpg"

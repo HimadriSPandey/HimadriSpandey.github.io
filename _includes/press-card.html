@@ -1,0 +1,16 @@
+<a class="press-card" href="{{ include.item.url }}" target="_blank" rel="noopener">
+    <div class="press-card-media">
+        {% if include.item.image %}
+        <img src="{{ include.item.image | relative_url }}" alt="{{ include.item.title }}" loading="lazy">
+        {% else %}
+        <div class="press-card-placeholder"><span>{{ include.item.outlet }}</span></div>
+        {% endif %}
+    </div>
+    <div class="press-card-body">
+        <p class="press-card-meta">{{ include.item.outlet }} &middot; {{ include.item.date }}</p>
+        <h3 class="press-card-title">{{ include.item.title }}</h3>
+        {% if include.item.note %}
+        <p class="press-card-note">{{ include.item.note | markdownify | strip_html | strip }}</p>
+        {% endif %}
+    </div>
+</a>

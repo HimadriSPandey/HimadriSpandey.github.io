@@ -1,0 +1,11 @@
+<section id="press-preview" class="press-preview">
+    <div class="section-container reveal">
+        <h2 class="section-title">In the News</h2>
+        <div class="press-grid">
+            {% for item in site.data.press limit: 3 %}
+            {% include press-card.html item=item %}
+            {% endfor %}
+        </div>
+        <p class="press-more"><a href="{{ '/news/' | relative_url }}">See all {{ site.data.press.size }} articles &rarr;</a></p>
+    </div>
+</section>
