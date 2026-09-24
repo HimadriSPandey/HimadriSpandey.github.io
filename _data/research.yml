@@ -34,7 +34,7 @@
   findings:
     - "On data from the NCAA&ndash;DoD CARE Consortium, the designed batteries cut administration time by **more than 97%** compared with batteries used in practice."
     - "They maintain high accuracy (**AUC above 0.93**)."
-  partners: "NCAA&ndash;DoD CARE Consortium (Steven Broglio, Michigan; Michael McCrea, Medical College of Wisconsin; Thomas McAllister, Indiana; Paul Pasquina, Uniformed Services University; Landon Lempke, VCU)"
+  partners: "NCAA&ndash;DoD CARE Consortium"
   status: "IISE Transactions (2026). Winner, INFORMS MIF Student Poster Competition (2024)."
   links:
     - label: "Paper"
@@ -50,7 +50,7 @@
     individual baselines add over assessing an injured athlete without one.
   findings:
     - "The results give athletic and medical programs evidence for deciding when universal baseline testing is worth its operational cost."
-  partners: "NCAA&ndash;DoD CARE Consortium (Julianne Schmidt and Robert Lynall, University of Georgia; Steven Broglio, Michigan; Michael McCrea, Medical College of Wisconsin; Thomas McAllister, Indiana; Paul Pasquina, Uniformed Services University)"
+  partners: "NCAA&ndash;DoD CARE Consortium"
   status: "The American Journal of Sports Medicine (2025)"
   links:
     - label: "Paper"
