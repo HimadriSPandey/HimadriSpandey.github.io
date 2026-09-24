@@ -2,6 +2,24 @@
     <div class="section-container reveal">
         <h2 class="section-title">Teaching</h2>
 
+        {% if site.data.teaching_interests %}
+        <div class="teaching-interests">
+            <h3 class="teaching-interests-title">Courses I am prepared to teach</h3>
+            <div class="teaching-interests-grid">
+                {% for c in site.data.teaching_interests %}
+                <div class="teaching-interest">
+                    <p class="teaching-interest-course">{{ c.course }}</p>
+                    <p class="teaching-interest-level">{{ c.level }}</p>
+                    <p class="teaching-interest-desc">{{ c.desc }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            {% if site.author.teaching_statement %}
+            <p class="teaching-statement"><a href="{{ site.author.teaching_statement | relative_url }}" target="_blank">Teaching statement (PDF) &rarr;</a></p>
+            {% endif %}
+        </div>
+        {% endif %}
+
         {% for school in site.data.teaching %}
         <div class="teaching-school-group">
             <div class="teaching-school-header">

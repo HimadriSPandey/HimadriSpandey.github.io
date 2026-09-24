@@ -9,18 +9,37 @@
 - school: "@ Georgia Institute of Technology | Atlanta, GA, USA"
   logo: /assets/images/logowseal-RGB.png
   experiences:
-    - title: "Instructor"
+    - title: "Instructor of Record"
       items:
         - col1: "Summer 2026"
-          col2: "ISyE 4600 - Methods and Applications of Machine Learning"
+          col2: "ISyE 4600 - Methods and Applications of Machine Learning (undergraduate)"
           comment: |
-            Sole instructor. Student evaluations: overall instructor effectiveness 4.0/5, respect for
-            students 4.25/5, enthusiasm 4.25/5 (5 of 6 students responding). *"Explaining difficult
-            concepts with simple language."*
+            Sole instructor for an asynchronous online section, designing the recorded lectures,
+            quizzes, exams, and a group project.
+        - col1: "Evaluations"
+          col2: "Overall instructor effectiveness 4.0/5 · Respect for students 4.25/5 · Enthusiasm 4.25/5"
+          comment: |
+            5 of 6 students responding. Students on my greatest strength: *"Explaining difficult
+            concepts with simple language"*; *"Clear presentation of the topics, very flexible and
+            understanding."*
+
+- school: "@ Lucas Systems | Pittsburgh, PA, USA"
+  experiences:
+    - title: "Industry Mentoring & Training"
+      items:
+        - col1: "2019 – 2022"
+          col2: "Mentor to two data scientists"
+          comment: |
+            Organized and taught internal workshops, including "Machine Learning 101" and "Docker 101".
 
 - school: "@ University of Cincinnati | Cincinnati, OH, USA"
   logo: /assets/images/University-of-Cincinnati-Logo.png
   experiences:
+    - title: "Supplemental Instruction Leader & Math/Science Tutor, MASS Center"
+      items:
+        - col1: "2015 – 2019"
+          col2: "Calculus, Data Structures, Programming"
+          comment: Led weekly review sessions and tutored first- and second-year undergraduates.
     - title: "Coding Mentor, Google Ignite CS — Bearcat Coders"
       items:
         - col1: "Aug 2015 – Dec 2016"

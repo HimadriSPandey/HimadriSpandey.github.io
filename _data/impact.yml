@@ -22,7 +22,7 @@
   years: "2019–2022"
   icon: "fa-solid fa-warehouse"
   points:
-    - "Built optimization and ML tools for warehouse operations, including dynamic slotting and workflow optimization."
+    - "Built and deployed an online order-batching system, a real-time workforce forecasting tool, and a storage-location assignment strategy that together cut average picking time by **26%**."
     - "Wrote an [industry op-ed on AI-driven slotting](https://www.freightwaves.com/news/viewpoint-get-more-dynamic-with-your-slotting) for FreightWaves."
 
 - org: "Amazon Web Services"

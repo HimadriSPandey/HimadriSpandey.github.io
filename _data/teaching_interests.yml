@@ -1,0 +1,27 @@
+# Courses I am prepared to teach (shown at the top of the Teaching section)
+# Fields: course, level, desc
+# Optional: set `statement:` in _config.yml under author to link a teaching statement PDF.
+
+- course: "Operations Management"
+  level: "Undergraduate / MBA core"
+  desc: "Process analysis, capacity and queueing, inventory, and service operations, with healthcare and warehousing cases."
+
+- course: "Business Analytics & Data-Driven Decision-Making"
+  level: "Undergraduate / MBA"
+  desc: "From prediction to prescription: regression, classification, and optimization for managerial decisions."
+
+- course: "Decision Models / Management Science"
+  level: "Undergraduate / MBA"
+  desc: "Linear and integer optimization, simulation, and decision-making under uncertainty in spreadsheets and Python."
+
+- course: "Machine Learning for Business"
+  level: "Undergraduate / MS"
+  desc: "Applied ML with an emphasis on evaluation, interpretability, and deployment; builds on my ISyE 4600 course."
+
+- course: "Healthcare Operations"
+  level: "Elective / MBA / PhD"
+  desc: "Capacity, patient flow, clinical escalation, and diagnostic resource allocation, drawn from my work with hospital partners."
+
+- course: "Sequential Decision-Making & Data-Driven Optimization"
+  level: "PhD seminar"
+  desc: "MDPs, restless bandits, reinforcement learning, and decision-focused learning for operations research."
