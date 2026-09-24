@@ -16,12 +16,8 @@
           comment: |
             Sole instructor for an asynchronous online section, designing the recorded lectures,
             quizzes, exams, and a group project.
-        - col1: "Evaluations"
-          col2: "Overall instructor effectiveness 4.0/5 · Respect for students 4.25/5 · Enthusiasm 4.25/5"
-          comment: |
-            5 of 6 students responding. Students on my greatest strength: *"Explaining difficult
-            concepts with simple language"*; *"Clear presentation of the topics, very flexible and
-            understanding."*
+        - col1: "Student comments"
+          col2: '<em>"Explaining difficult concepts with simple language."</em> · <em>"Clear presentation of the topics, very flexible and understanding."</em>'
 
 - school: "@ Lucas Systems | Pittsburgh, PA, USA"
   experiences:
