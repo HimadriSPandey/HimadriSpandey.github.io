@@ -1,0 +1,47 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+
+<section id="research" class="research-page">
+    <div class="section-container">
+        <h1 class="section-title">Research</h1>
+        <p class="research-intro">
+            My research asks how organizations should allocate scarce resources when decisions repeat over time,
+            outcomes are uncertain, and data are imperfect. I build these models with the practitioners
+            who will use them, and I evaluate them on the measures managers care about: coverage, lead time,
+            and resource use.
+        </p>
+
+        {% for p in site.data.research %}
+        <article class="research-card{% if forloop.first %} research-card-featured{% endif %}">
+            <p class="research-tag">{{ p.tag }}</p>
+            <h2 class="research-title">{{ p.title }}</h2>
+
+            <h3 class="research-label">The question</h3>
+            {{ p.question | markdownify }}
+
+            <h3 class="research-label">The approach</h3>
+            {{ p.approach | markdownify }}
+
+            {% if p.findings %}
+            <h3 class="research-label">What we find</h3>
+            <ul class="research-findings">
+                {% for f in p.findings %}<li>{{ f | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+
+            <p class="research-meta">
+                {% if p.partners %}<span><strong>Partners:</strong> {{ p.partners }}</span>{% endif %}
+                {% if p.status %}<span><strong>Status:</strong> {{ p.status }}</span>{% endif %}
+            </p>
+            {% if p.links %}
+            <div class="pub-links">
+                {% for l in p.links %}<a href="{{ l.url }}" class="pub-link" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}
+            </div>
+            {% endif %}
+        </article>
+        {% endfor %}
+    </div>
+</section>

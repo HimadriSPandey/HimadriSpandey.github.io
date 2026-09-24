@@ -1006,6 +1006,160 @@ section.press-preview {
     }
 }
 
+/* Research page */
+.research-page {
+    padding-top: 120px;
+}
+
+.research-intro,
+.impact-intro {
+    color: var(--text-muted);
+    margin: -0.5rem 0 2rem;
+    max-width: 780px;
+}
+
+.research-card {
+    background: var(--bg-section);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.75rem;
+    max-width: 900px;
+}
+
+.research-card-featured {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 8px 24px rgba(163, 143, 97, 0.15);
+}
+
+.research-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--news-color);
+    background: var(--news-tint);
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+}
+
+.research-card-featured .research-tag {
+    color: #ffffff;
+    background: var(--primary-color);
+}
+
+.research-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.research-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--primary-color);
+    margin: 1.1rem 0 0.3rem;
+}
+
+.research-card p,
+.research-findings li {
+    color: var(--text-dark);
+}
+
+.research-findings {
+    padding-left: 1.2rem;
+}
+
+.research-findings li {
+    margin-bottom: 0.35rem;
+}
+
+.research-meta {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-muted) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.research-card .pub-links {
+    margin-top: 0.75rem;
+}
+
+/* Practice & Industry */
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 1.25rem;
+}
+
+.impact-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+}
+
+.impact-head {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.impact-icon {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    width: 1.8rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.impact-org {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+}
+
+.impact-role {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.impact-points {
+    padding-left: 1.1rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.impact-points li {
+    margin-bottom: 0.35rem;
+}
+
+@media (max-width: 768px) {
+    .research-page {
+        padding-top: 100px;
+    }
+
+    .research-card {
+        padding: 1.25rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Scroll Reveal Animation */
 .reveal {
     opacity: 0;

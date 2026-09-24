@@ -1,0 +1,57 @@
+# Research projects (shown on /research/, in this order)
+# Fields: title, tag (short label), question, approach, findings (list), partners, status, links (list of {label, url})
+
+- title: "Who Gets Watched? Allocating Scarce Escalation Resources on Pediatric Wards"
+  tag: "Job Market Paper"
+  question: |
+    When several hospitalized children show signs of deterioration at once, who should receive
+    closer surveillance, a critical-care outreach assessment, or an ICU transfer, given that each
+    of these resources is limited?
+  approach: |
+    Hospitals typically manage each escalation pathway separately and rely on risk scores as
+    stand-alone decision rules. I model the ward as a multi-action restless bandit and develop
+    **MILOP** (Multi-action Index Learning and Optimization Policy), which trains a neural network
+    to produce a priority index for each patient and action, learned for the allocation decision
+    itself rather than for prediction accuracy alone.
+  findings:
+    - "In a retrospective evaluation of 101,277 ward episodes at Children's Healthcare of Atlanta, MILOP recommends escalation before **87.4%** of critical or emergent ICU transfers, versus 79.5% for the strongest practical baseline."
+    - "It does so while using **13.5% less** monitoring capacity."
+    - "It gives clinical teams a median of **19.2 hours** of lead time before transfer."
+    - "**99.3%** of MILOP's proactive transfer recommendations are preceded by surveillance or an outreach assessment, consistent with a controlled escalation of care."
+  partners: "Children's Healthcare of Atlanta; Pediatric Technology Center at Georgia Tech"
+  status: "Under review, Manufacturing & Service Operations Management (Practice-Based Research Competition)"
+
+- title: "So Many Tests, So Little Time: Diagnostic Assessment under Time Constraints"
+  tag: "Published"
+  question: |
+    Clinicians diagnosing concussion on the sideline, in the emergency department, or in the
+    military often have minutes, not hours. Which tests should a diagnostic battery include when
+    time is the binding constraint?
+  approach: |
+    I formulate battery design as a chance-constrained mixed-integer program that builds an
+    interpretable diagnostic model while respecting a limit on (uncertain) administration time,
+    with reformulations that make it tractable at scale.
+  findings:
+    - "On data from the NCAA&ndash;DoD CARE Consortium, the designed batteries cut administration time by **more than 97%** compared with batteries used in practice."
+    - "They maintain high accuracy (**AUC above 0.93**)."
+  partners: "NCAA&ndash;DoD CARE Consortium"
+  status: "IISE Transactions (2026). Winner, INFORMS MIF Student Poster Competition (2024)."
+  links:
+    - label: "Paper"
+      url: "https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282"
+
+- title: "Is Baseline Concussion Testing Worth It?"
+  tag: "Published"
+  question: |
+    Many athletic programs require pre-season baseline testing for every athlete, which costs
+    significant staff time. How much does that baseline actually improve post-injury diagnosis?
+  approach: |
+    Using the CARE Consortium's collegiate athlete data, we quantify the diagnostic value that
+    individual baselines add over assessing an injured athlete without one.
+  findings:
+    - "The results give athletic and medical programs evidence for deciding when universal baseline testing is worth its operational cost."
+  partners: "NCAA&ndash;DoD CARE Consortium"
+  status: "The American Journal of Sports Medicine (2025)"
+  links:
+    - label: "Paper"
+      url: "https://journals.sagepub.com/doi/10.1177/03635465241298074"

@@ -4,6 +4,7 @@
         {% if page.url == "/" %}{% assign home = "" %}{% else %}{% assign home = "/" | relative_url %}{% endif %}
         <ul class="nav-links" id="navLinks">
             <li><a href="{{ home }}#about">Home</a></li>
+            <li><a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} class="active"{% endif %}>Research</a></li>
             <li><a href="{{ home }}#publications">Publications</a></li>
             <li><a href="{{ home }}#awards">Awards</a></li>
             <li><a href="{{ home }}#services">Services</a></li>

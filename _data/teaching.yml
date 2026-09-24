@@ -13,6 +13,10 @@
       items:
         - col1: "Summer 2026"
           col2: "ISyE 4600 - Methods and Applications of Machine Learning"
+          comment: |
+            Sole instructor. Student evaluations: overall instructor effectiveness 4.0/5, respect for
+            students 4.25/5, enthusiasm 4.25/5 (5 of 6 students responding). *"Explaining difficult
+            concepts with simple language."*
 
 - school: "@ University of Cincinnati | Cincinnati, OH, USA"
   logo: /assets/images/University-of-Cincinnati-Logo.png

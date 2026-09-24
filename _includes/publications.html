@@ -60,6 +60,9 @@
                         {% if pub.abstract or pub.figure %}
                         <button class="pub-link pub-toggle" onclick="toggleAbstract('pub-{{ forloop.index }}')">Abstract ▼</button>
                         {% endif %}
+                {% if pub.ssrn %}
+                <a href="{{ pub.ssrn }}" class="pub-link">SSRN</a>
+                {% endif %}
                 {% if pub.preprint %}
                 <a href="{{ pub.preprint }}" class="pub-link">Preprint</a>
                 {% endif %}

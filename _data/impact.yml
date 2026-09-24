@@ -1,0 +1,32 @@
+# Practice & industry impact (shown on the home page under the bio)
+# Fields: org, role, years, icon (Font Awesome class), points (list, supports Markdown)
+
+- org: "Children's Healthcare of Atlanta"
+  role: "Research partner, Pediatric Technology Center (Pillar 1)"
+  icon: "fa-solid fa-hospital"
+  points:
+    - "Clinicians helped define transfer severity, useful lead time, and resource limits for the ward escalation model."
+    - "Evaluated on CHOA's longitudinal ward records; deployment planning is underway within the program."
+    - "The M&SOM submission carries support letters from the Pediatric Technology Center co-directors and a CHOA pediatric critical care physician. [Featured by Georgia Tech Research News](/news/)."
+
+- org: "NCAA–DoD CARE Consortium"
+  role: "Multi-site study of concussion in collegiate athletes and military cadets"
+  icon: "fa-solid fa-stethoscope"
+  points:
+    - "Designed concussion test batteries that take **more than 97% less time** to administer while keeping AUC above 0.93."
+    - "Quantified the diagnostic value of pre-season baseline testing, which programs use to decide whether it is worth the staff time."
+
+- org: "Lucas Systems"
+  role: "Applied Scientist"
+  years: "2019–2022"
+  icon: "fa-solid fa-warehouse"
+  points:
+    - "Built optimization and ML tools for warehouse operations, including dynamic slotting and workflow optimization."
+    - "Wrote an [industry op-ed on AI-driven slotting](https://www.freightwaves.com/news/viewpoint-get-more-dynamic-with-your-slotting) for FreightWaves."
+
+- org: "Amazon Web Services"
+  role: "Applied Scientist Intern"
+  years: "2025"
+  icon: "fa-brands fa-aws"
+  points:
+    - "Built AWS's first time-series forecasting framework for ML traffic between EC2 and S3 GPU fabrics."

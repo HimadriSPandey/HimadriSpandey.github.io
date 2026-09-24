@@ -1,6 +1,6 @@
 # Publications (newest first)
 # Fields: title, authors (list), venue, year, category, keywords, colab, abstract,
-#         figure, figure_caption, award, preprint, full_paper, pdf, slides, video, code, url
+#         figure, figure_caption, award, ssrn, preprint, full_paper, pdf, slides, video, code, url
 # Categories used in filter: sel (Selected), seq (Sequential Decision-Making), hc (Healthcare), method (Methods), all
 
 - title: |
@@ -28,6 +28,21 @@
   colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
   award:
     - Finalist, Lee B. Lusted Student Prize Competition (QMTD), SMDM 2026
+  abstract: |
+    **Problem definition:** Hospitals use separate pathways to identify and respond to deteriorating
+    ward patients. At Children's Healthcare of Atlanta (CHOA), these include Watcher surveillance,
+    Critical Care Outreach Team assessment, and transfer to the intensive care unit. When several
+    patients need attention simultaneously, however, no common process determines who should receive
+    which response under limited staffing and capacity. **Methodology/results:** We model ward
+    escalation decisions as a multi-action restless multi-armed bandit and develop the Multi-action
+    Index Learning and Optimization Policy (MILOP), which trains a neural network to generate a
+    high-quality index policy using decision-focused learning. Using historical CHOA data, MILOP
+    recommends an escalation before 87.4% of critical or emergent ICU transfers, compared with 79.5%
+    for the stronger baseline, while using 13.5% less monitoring resources, and provides a median of
+    19.2 hours of lead time. **Managerial implications:** Hospitals may improve escalation decisions by
+    coordinating existing pathways rather than managing each separately or using risk scores as
+    stand-alone decision rules.
+  # ssrn: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=XXXXXXX"  # add once posted
   category: [sel, seq, hc, method]
 
 - title: |
@@ -47,6 +62,14 @@
   colab: ["Georgia Tech", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
   award:
     - MIF Student Poster Competition Winner, INFORMS 2024
+  abstract: |
+    Practitioners must often make diagnostic decisions under operational constraints; for example,
+    clinicians diagnosing concussion may assess patients under time limits imposed by athletic,
+    emergency department, or military settings. We generate interpretable ML models that enforce such
+    constraints, modeling battery design as a chance-constrained mixed integer program with
+    reformulations for tractability. On data from the NCAA&ndash;DoD CARE Consortium, the resulting
+    batteries reduce administration time by more than 97% relative to batteries used in practice while
+    maintaining AUC above 0.93.
   full_paper: "https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282"
   category: [sel, hc, method]
 

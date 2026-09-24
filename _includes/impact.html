@@ -1,0 +1,22 @@
+<section id="impact">
+    <div class="section-container reveal">
+        <h2 class="section-title">Practice &amp; Industry</h2>
+        <p class="impact-intro">My research is developed with the organizations that face these decisions, and shaped by three years of industry work.</p>
+        <div class="impact-grid">
+            {% for i in site.data.impact %}
+            <div class="impact-card">
+                <div class="impact-head">
+                    <i class="{{ i.icon }} impact-icon"></i>
+                    <div>
+                        <p class="impact-org">{{ i.org }}</p>
+                        <p class="impact-role">{{ i.role }}{% if i.years %} &middot; {{ i.years }}{% endif %}</p>
+                    </div>
+                </div>
+                <ul class="impact-points">
+                    {% for pt in i.points %}<li>{{ pt | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
