@@ -30,6 +30,15 @@ content: |
 # News items (newest first)
 # Each item has: date (YYYY-MM format), content (supports Markdown)
 news:
+  - date: "2026-11"
+    content:
+      Upcoming at the **[INFORMS Annual Meeting 2026](https://meetings.informs.org/wordpress/annual/)**
+      in San Francisco (Sun, Nov 1), I'll present **Neural Index Policies for Multi-Action Restless
+      Multi-Armed Bandits with Heterogeneous Budgets** in the
+      [Job Market Showcase](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818)
+      (1:15 PM, Moscone South-203) and in the session I co-chair,
+      [Sequential Decision Making for Patient Care](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656)
+      (5:15 PM, Moscone South-105).
   - date: "2026-09"
     content:
       Our ACCORD project with Children's Healthcare of Atlanta was featured by

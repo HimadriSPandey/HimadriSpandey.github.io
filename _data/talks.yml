@@ -1,6 +1,18 @@
 # Talks (newest first)
 # Fields: date, type (Talk/Keynote/Poster/Tutorial/Presentation), venue, venue_url, title, slides, video
 
+- date: "Nov 2026"
+  type: "Job Market Showcase"
+  venue: "INFORMS Annual Meeting, San Francisco"
+  venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818"
+  title: "Neural Index Policies for Multi-Action Restless Multi-Armed Bandits with Heterogeneous Budgets"
+
+- date: "Nov 2026"
+  type: "Invited Talk"
+  venue: "INFORMS Annual Meeting, San Francisco"
+  venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656"
+  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
+
 - date: "2026"
   type: "Invited Talk"
   venue: "INFORMS Healthcare Conference"
