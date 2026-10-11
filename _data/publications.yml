@@ -4,6 +4,22 @@
 # Categories used in filter: sel (Selected), seq (Sequential Decision-Making), hc (Healthcare), method (Methods), all
 
 - title: |
+    Early Prediction of Pediatric ICU Transfer: A Comparative Study of Tabular and Time Series Machine Learning Models
+  year: 2026
+  authors:
+    - Tianyi Chen
+    - Zenghui Sun
+    - Himadri S. Pandey
+    - Mark V. Mai
+    - Naveen Muthu
+    - Gian-Gabriel P. Garcia
+    - Kai Wang
+  venue: Submitted — INFORMS Journal on Data Science
+  keywords: [Clinical Deterioration, ICU Transfer, Time Series, Machine Learning, Pediatrics]
+  colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
+  category: [hc, method]
+
+- title: |
     Rank, Then Allocate: A Sequential Knapsack Framework for Feature-Driven Personalization
   year: 2026
   authors:
