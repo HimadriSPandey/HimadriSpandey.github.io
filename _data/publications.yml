@@ -1,38 +1,14 @@
 # Publications (newest first)
-# Fields: title, authors (list), venue, year, category, keywords, colab, abstract,
+# Fields: title, authors (list), venue, year, status, category, keywords, colab, abstract,
 #         figure, figure_caption, award, ssrn, preprint, full_paper, pdf, slides, video, code, url
-# Categories used in filter: sel (Selected), seq (Sequential Decision-Making), hc (Healthcare), method (Methods), all
-
-- title: |
-    Early Prediction of Pediatric ICU Transfer: A Comparative Study of Tabular and Time Series Machine Learning Models
-  year: 2026
-  authors:
-    - Tianyi Chen
-    - Zenghui Sun
-    - Himadri S. Pandey
-    - Mark V. Mai
-    - Naveen Muthu
-    - Gian-Gabriel P. Garcia
-    - Kai Wang
-  venue: Submitted — INFORMS Journal on Data Science
-  keywords: [Clinical Deterioration, ICU Transfer, Time Series, Machine Learning, Pediatrics]
-  colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
-  category: [hc, method]
-
-- title: |
-    Rank, Then Allocate: A Sequential Knapsack Framework for Feature-Driven Personalization
-  year: 2026
-  authors:
-    - Himadri S. Pandey
-    - Gian-Gabriel P. Garcia
-  venue: In Preparation
-  keywords: [Sequential Knapsack, Feature Ranking, Personalization, Mixed Integer Programming]
-  colab: ["Georgia Tech"]
-  category: [method]
+# status sets the heading a paper is listed under on the publications page:
+#   journal (Journal Publications), review (Under Review), working (Working Papers),
+#   chapter (Book Chapters), proceedings (Conference Proceedings)
 
 - title: |
     Who Gets Watched? Allocating Scarce Escalation Resources on Pediatric Wards with Neural Index Policies
   year: 2026
+  status: review
   authors:
     - Himadri S. Pandey
     - Mark V. Mai
@@ -62,8 +38,38 @@
   category: [sel, seq, hc, method]
 
 - title: |
+    Early Prediction of Pediatric ICU Transfer: A Comparative Study of Tabular and Time Series Machine Learning Models
+  year: 2026
+  status: review
+  authors:
+    - Tianyi Chen
+    - Zenghui Sun
+    - Himadri S. Pandey
+    - Mark V. Mai
+    - Naveen Muthu
+    - Gian-Gabriel P. Garcia
+    - Kai Wang
+  venue: Submitted — INFORMS Journal on Data Science
+  keywords: [Clinical Deterioration, ICU Transfer, Time Series, Machine Learning, Pediatrics]
+  colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
+  category: [hc, method]
+
+- title: |
+    Rank, Then Allocate: A Sequential Knapsack Framework for Feature-Driven Personalization
+  year: 2026
+  status: working
+  authors:
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+  venue: In Preparation
+  keywords: [Sequential Knapsack, Feature Ranking, Personalization, Mixed Integer Programming]
+  colab: ["Georgia Tech"]
+  category: [method]
+
+- title: |
     So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints
   year: 2026
+  status: journal
   authors:
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
@@ -92,6 +98,7 @@
 - title: |
     Quantifying the Diagnostic Utility of Baseline Testing: An Analysis of Collegiate Athletes from the NCAA-DoD CARE Consortium Dataset
   year: 2025
+  status: journal
   authors:
     - Himadri S. Pandey
     - Julianne D. Schmidt
@@ -111,6 +118,7 @@
 - title: |
     Optimizing Baseline and Post-Concussion Assessments Through Factor Structure Analysis: Findings from the NCAA-DoD CARE Consortium
   year: 2023
+  status: journal
   authors:
     - Landon B. Lempke
     - Adrian J. Boltz
@@ -131,6 +139,7 @@
 - title: |
     Designing Interpretable Machine Learning Models Using Mixed Integer Programming
   year: 2023
+  status: chapter
   authors:
     - Seung Ji Lee
     - Himadri S. Pandey
@@ -144,6 +153,7 @@
 - title: |
     A Python Upgrade to the GooFit Package for Parallel Fitting
   year: 2019
+  status: proceedings
   authors:
     - Henry Schreiner
     - Himadri S. Pandey
@@ -160,6 +170,7 @@
 - title: |
     A Python Upgrade to the GooFit Package for Parallel Fitting
   year: 2018
+  status: proceedings
   authors:
     - Henry Schreiner
     - Himadri S. Pandey
@@ -175,6 +186,7 @@
 - title: |
     GooFit 2.0
   year: 2018
+  status: proceedings
   authors:
     - Henry Schreiner
     - Christoph Hasse

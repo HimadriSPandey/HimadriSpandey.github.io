@@ -203,25 +203,25 @@ nav {
 
 .profile-focus {
     color: var(--text-dark);
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     margin-bottom: 0.25rem;
 }
 
 .profile-title {
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-bottom: 0.25rem;
 }
 
 .profile-affiliation {
     color: var(--text-muted);
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     margin-bottom: 0rem;
 }
 
 .profile-affiliation-secondary {
     color: var(--text-muted);
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     margin-bottom: 0rem;
 }
 
@@ -276,7 +276,7 @@ nav {
 
 .bio p {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.08rem;
     color: var(--text-dark);
 }
 
@@ -405,56 +405,40 @@ section:nth-child(even) {
 }
 
 /* Publications Section */
-.pub-filter {
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.pub-filter label {
-    font-weight: 500;
-    color: var(--text-dark);
-}
-
-.pub-filter select {
-    padding: 0.5rem 2rem 0.5rem 0.75rem;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    background: var(--bg-section);
-    color: var(--text-dark);
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235a6c7d' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
-}
-
-.pub-filter select:hover {
-    border-color: var(--primary-color);
-}
-
-.pub-filter select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(163, 143, 97, 0.1);
-}
-
 .pub-filter-note {
     font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 1.5rem;
 }
 
+.pub-group-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 2rem 0 0.5rem;
+}
+
+.pub-group-title:first-of-type {
+    margin-top: 0;
+}
+
 .pub-item {
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
 .pub-item:last-child {
     border-bottom: none;
+}
+
+.pub-meta {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.pub-meta strong {
+    color: var(--text-dark);
 }
 
 .pub-content-wrapper {
@@ -490,7 +474,7 @@ section:nth-child(even) {
 .pub-title {
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     font-size: 1.05rem;
 }
 
@@ -1629,7 +1613,7 @@ section.press-preview {
 }
 
 .news-list li {
-    font-size: 0.85rem;
+    font-size: 0.98rem;
     line-height: 1.45;
 }
 
@@ -1639,7 +1623,7 @@ section.press-preview {
 
 .impact-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 1.45rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
@@ -1664,17 +1648,17 @@ section.press-preview {
 }
 
 .impact-org {
-    font-size: 0.95rem;
+    font-size: 1.08rem;
     line-height: 1.3;
 }
 
 .impact-role {
-    font-size: 0.8rem;
+    font-size: 0.92rem;
     line-height: 1.35;
 }
 
 .impact-points {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     line-height: 1.45;
 }
 
@@ -1717,15 +1701,20 @@ section.press-preview {
     }
 
     body.home .profile-card h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     body.home .profile-title {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     body.home .profile-affiliation {
-        font-size: 0.92rem;
+        font-size: 1.02rem;
+    }
+
+    body.home .profile-links a,
+    body.home .profile-links .profile-link-text {
+        font-size: 1.05rem;
     }
 
     body.home .landing-main {
@@ -1740,7 +1729,7 @@ section.press-preview {
     }
 
     body.home .bio p {
-        font-size: 0.95rem;
+        font-size: 1.08rem;
         margin-bottom: 0.6rem;
         line-height: 1.55;
     }

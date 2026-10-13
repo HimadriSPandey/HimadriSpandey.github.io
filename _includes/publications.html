@@ -2,93 +2,50 @@
     <div class="section-container reveal">
         <h2 class="section-title">Publications</h2>
 
-        <div class="pub-filter">
-            <label for="pub-category-filter">Filter by type:</label>
-            <select id="pub-category-filter" onchange="filterPublications()">
-                <option value="sel">Selected Publications</option>
-                <option value="seq">Sequential Decision-Making & RL</option>
-                <option value="hc">Healthcare Applications</option>
-                <option value="method">ML Methodology</option>
-                <option value="all">All</option>
-            </select>
-        </div>
         <div class="pub-filter-note">
             <a href="{{ site.social.google_scholar }}" target="_blank">Google Scholar</a> | <em>* indicates authors with equal contribution</em>
         </div>
 
-        {% for pub in site.data.publications %}
-        <div class="pub-item" data-categories="{% if pub.category %}{{ pub.category | join: ',' }}{% endif %}">
-            <div class="pub-content-wrapper">
-                {% if pub.thumbnail %}
-                <div class="pub-thumbnail">
-                    <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title }} thumbnail">
-                </div>
-                {% endif %}
-                <div class="pub-content">
-                    <div class="pub-title">
-                        {% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
-                        {% if pub.year %}<span class="pub-year">({{ pub.year }})</span>{% endif %}
-                    </div>
-                    <div class="pub-authors">
-                {% for author in pub.authors %}{% assign author_clean = author | replace: '*', '' | replace: '†', '' | strip %}{% if author_clean == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {% assign pub_groups = "journal:Journal Publications|review:Under Review|working:Working Papers|chapter:Book Chapters|proceedings:Conference Proceedings" | split: "|" %}
+        {% for group in pub_groups %}
+        {% assign group_key = group | split: ":" | first %}
+        {% assign group_label = group | split: ":" | last %}
+        {% assign group_pubs = site.data.publications | where: "status", group_key %}
+        {% if group_pubs.size > 0 %}
+        <h3 class="pub-group-title">{{ group_label }}</h3>
+        {% for pub in group_pubs %}
+        {% capture pub_id %}pub-{{ group_key }}-{{ forloop.index }}{% endcapture %}
+        <div class="pub-item">
+            <div class="pub-title">
+                {% if pub.url %}<a href="{{ pub.url }}">{{ pub.title | strip }}</a>{% elsif pub.full_paper %}<a href="{{ pub.full_paper }}">{{ pub.title | strip }}</a>{% else %}{{ pub.title | strip }}{% endif %}
             </div>
-            <div class="pub-venue">
-                {{ pub.venue }}
+            <div class="pub-meta">
+                {% for author in pub.authors %}{% assign author_clean = author | replace: '*', '' | replace: '†', '' | strip %}{% if author_clean == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+                <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}.
             </div>
-            {% if pub.keywords %}
-            <div class="pub-keywords">
-                <strong>Keywords:</strong> {{ pub.keywords | join: ", " }}
-            </div>
-            {% endif %}
-            {% if pub.colab %}
-            <div class="pub-colab">
-                <strong>Collaboration:</strong> {{ pub.colab | join: ", " }}
-            </div>
-            {% endif %}
             {% if pub.award %}
             <div class="pub-award-section">
-                {% if pub.award.first %}
-                {% for award_item in pub.award %}
-                🏆 {{ award_item }}<br>
-                {% endfor %}
-                {% else %}
-                🏆 {{ pub.award }}
-                {% endif %}
+                {% if pub.award.first %}{% for award_item in pub.award %}🏆 {{ award_item }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}{% else %}🏆 {{ pub.award }}{% endif %}
             </div>
             {% endif %}
-                    <div class="pub-links">
-                        {% if pub.abstract or pub.figure %}
-                        <button class="pub-link pub-toggle" onclick="toggleAbstract('pub-{{ forloop.index }}')">Abstract ▼</button>
-                        {% endif %}
-                {% if pub.ssrn %}
-                <a href="{{ pub.ssrn }}" class="pub-link">SSRN</a>
+            {% if pub.abstract or pub.figure or pub.ssrn or pub.preprint or pub.pdf or pub.slides or pub.video or pub.code %}
+            <div class="pub-links">
+                {% if pub.abstract or pub.figure %}
+                <button class="pub-link pub-toggle" onclick="toggleAbstract('{{ pub_id }}', this)">Abstract ▼</button>
                 {% endif %}
-                {% if pub.preprint %}
-                <a href="{{ pub.preprint }}" class="pub-link">Preprint</a>
-                {% endif %}
-                {% if pub.full_paper %}
-                <a href="{{ pub.full_paper }}" class="pub-link">Full Paper</a>
-                {% endif %}
-                {% if pub.pdf %}
-                <a href="{{ pub.pdf }}" class="pub-link">PDF</a>
-                {% endif %}
-                {% if pub.slides %}
-                <a href="{{ pub.slides }}" class="pub-link">Slides</a>
-                {% endif %}
-                {% if pub.video %}
-                <a href="{{ pub.video }}" class="pub-link">Video</a>
-                {% endif %}
-                        {% if pub.code %}
-                        <a href="{{ pub.code }}" class="pub-link">Code</a>
-                        {% endif %}
-                    </div>
-                </div>
+                {% if pub.ssrn %}<a href="{{ pub.ssrn }}" class="pub-link">SSRN</a>{% endif %}
+                {% if pub.preprint %}<a href="{{ pub.preprint }}" class="pub-link">Preprint</a>{% endif %}
+                {% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-link">PDF</a>{% endif %}
+                {% if pub.slides %}<a href="{{ pub.slides }}" class="pub-link">Slides</a>{% endif %}
+                {% if pub.video %}<a href="{{ pub.video }}" class="pub-link">Video</a>{% endif %}
+                {% if pub.code %}<a href="{{ pub.code }}" class="pub-link">Code</a>{% endif %}
             </div>
+            {% endif %}
             {% if pub.abstract or pub.figure %}
-            <div class="pub-abstract" id="pub-{{ forloop.index }}" style="display: none;">
+            <div class="pub-abstract" id="{{ pub_id }}" style="display: none;">
                 {% if pub.figure %}
                 <div class="pub-figure">
-                    <img src="{{ pub.figure | relative_url }}" alt="{{ pub.title }} figure">
+                    <img src="{{ pub.figure | relative_url }}" alt="{{ pub.title | strip }} figure">
                     {% if pub.figure_caption %}
                     <div class="pub-figure-caption">{{ pub.figure_caption }}</div>
                     {% endif %}
@@ -103,37 +60,16 @@
             {% endif %}
         </div>
         {% endfor %}
+        {% endif %}
+        {% endfor %}
     </div>
 
     <script>
-    function filterPublications() {
-        const filter = document.getElementById('pub-category-filter').value;
-        const items = document.querySelectorAll('.pub-item');
-
-        items.forEach(item => {
-            const categories = item.dataset.categories ? item.dataset.categories.split(',') : [];
-            if (filter === 'all' || categories.includes(filter)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    }
-
-    function toggleAbstract(id) {
+    function toggleAbstract(id, button) {
         const abstractDiv = document.getElementById(id);
-        const button = event.target;
-
-        if (abstractDiv.style.display === 'none') {
-            abstractDiv.style.display = 'block';
-            button.innerHTML = 'Abstract ▲';
-        } else {
-            abstractDiv.style.display = 'none';
-            button.innerHTML = 'Abstract ▼';
-        }
+        const open = abstractDiv.style.display === 'none';
+        abstractDiv.style.display = open ? 'block' : 'none';
+        button.innerHTML = open ? 'Abstract ▲' : 'Abstract ▼';
     }
-
-    // Apply filter on page load
-    document.addEventListener('DOMContentLoaded', filterPublications);
     </script>
 </section>
