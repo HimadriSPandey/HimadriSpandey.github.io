@@ -361,16 +361,22 @@ body.home .site-shell {
     font-weight: 700;
 }
 
-.profile-link-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.25rem 1rem;
+.profile-link-social {
     font-size: 0.88rem;
 }
 
-.profile-link-row a {
+.profile-link-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     color: var(--text-muted);
+}
+
+.profile-icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    fill: currentColor;
 }
 
 @media (max-width: 760px) {
