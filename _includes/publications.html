@@ -2,10 +2,6 @@
     <div class="section-container reveal">
         <h2 class="section-title">Publications</h2>
 
-        <div class="pub-filter-note">
-            <a href="{{ site.social.google_scholar }}" target="_blank">Google Scholar</a> | <em>* indicates authors with equal contribution</em>
-        </div>
-
         {% assign pub_groups = "journal:Journal Publications|review:Under Review|working:Working Papers|chapter:Book Chapters|proceedings:Conference Proceedings" | split: "|" %}
         {% for group in pub_groups %}
         {% assign group_key = group | split: ":" | first %}

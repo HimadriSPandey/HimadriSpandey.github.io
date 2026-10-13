@@ -400,16 +400,10 @@ section:nth-child(even) {
 }
 
 /* Publications Section */
-.pub-filter-note {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-}
-
 .pub-group-title {
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--news-color);
     margin: 2rem 0 0.5rem;
 }
 
