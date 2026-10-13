@@ -234,36 +234,40 @@ nav {
     color: var(--primary-color);
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.profile-links {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin: 0 auto 0.5rem;
+    padding: 0;
+    list-style: none;
+    text-align: left;
 }
 
-.social-links a {
+.profile-links a,
+.profile-links .profile-link-text {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--bg-light);
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.social-links a:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
+    gap: 0.7rem;
+    color: var(--text-dark);
+    font-size: 0.95rem;
     text-decoration: none;
 }
 
-.profile-email {
-    font-size: 0.8rem;
+.profile-links i {
+    width: 1.1rem;
+    text-align: center;
+    font-size: 1.05rem;
     color: var(--text-muted);
+}
+
+.profile-links a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.profile-links a:hover i {
+    color: var(--primary-color);
 }
 
 .bio {
@@ -1487,26 +1491,6 @@ section.press-preview {
 }
 
 /* CV button */
-.cv-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding: 0.55rem 1.3rem;
-    border-radius: 999px;
-    background: var(--primary-color);
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background 0.2s ease;
-}
-
-.cv-button:hover {
-    background: var(--news-color);
-    color: #ffffff;
-    text-decoration: none;
-}
-
 /* Collapse nav to menu button before links crowd the brand */
 @media (max-width: 1080px) {
     .nav-links {
@@ -1740,8 +1724,7 @@ section.press-preview {
         font-size: 1rem;
     }
 
-    body.home .profile-affiliation,
-    body.home .profile-email {
+    body.home .profile-affiliation {
         font-size: 0.92rem;
     }
 
