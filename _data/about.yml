@@ -1,63 +1,58 @@
-# Your bio/about content (supports Markdown)
+# About page content (shown on /)
+# Keep the main text to roughly 300-400 words. Project detail belongs on /research/,
+# the full record in the CV.
+
 content: |
   I am a Machine Learning PhD Candidate at Georgia Tech's
   [H. Milton Stewart School of Industrial and Systems Engineering](https://www.isye.gatech.edu/),
   advised by [Dr. Gian-Gabriel Garcia](https://giangabrielgarcia.com/).
-  **I am on the job market.**
+  **I am on the 2026&ndash;27 academic job market.**
 
-  My research asks how organizations should allocate scarce resources, such as clinician attention,
-  diagnostic time, and monitoring capacity, when decisions repeat under uncertainty and with
-  imperfect data. I work in healthcare operations and data-driven decision-making, combining
-  optimization and sequential decision models with machine learning trained for the decision it
-  supports, not only for prediction accuracy.
+  I study how healthcare organizations should decide who receives help, what kind of help, and
+  when, if there is not enough to go around. My work combines machine learning, optimization, and
+  sequential decision-making to allocate clinical attention and to design diagnostic assessments.
 
-  I build this work with practitioners:
+  I build this work with clinicians at [Children's Healthcare of Atlanta](https://www.choa.org/)
+  and researchers in the NCAA&ndash;DoD CARE Consortium. Before my PhD, I spent three years as an
+  Applied Scientist at [Lucas Systems](https://www.lucasware.com/) (2019&ndash;2022), and in 2025 I
+  was an Applied Scientist Intern at [AWS](https://aws.amazon.com/).
 
-  - **[Children's Healthcare of Atlanta](https://www.choa.org/):** deciding which deteriorating
-    children on hospital wards receive closer monitoring, specialist assessment, or ICU transfer
-    when staff and beds are limited ([research](/research/)).
-  - **NCAA&ndash;DoD CARE Consortium:** designing concussion assessments that give each athlete
-    the right tests, within the time and resources clinicians have.
+  My work on [graduate-student mental health](/service/) informs my interest in improving access
+  to care beyond the university.
 
-  <hr class="bio-separator">
+# Quick links shown under the bio
+links:
+  - label: "Research"
+    url: "/research/"
+  - label: "Job-market paper"
+    url: "/research/#job-market-paper"
+  - label: "CV (PDF)"
+    url: "/assets/pdf/Pandey_Himadri_CV.pdf"
 
-  Before my PhD, I was an Applied Scientist at [Lucas Systems](https://www.lucasware.com/)
-  (2019&ndash;2022), building optimization and ML tools for warehouse operations. In 2025, I was
-  an Applied Scientist Intern at [AWS](https://aws.amazon.com/).
+# Selected recognition (at most four; the full list is in the CV)
+recognition:
+  - "Finalist, Lee B. Lusted Student Prize Competition, SMDM, 2026"
+  - "Winner, INFORMS MIF Student Poster Competition, 2024"
+  - "Philip J. and Delores A. Scott Graduate Student Health and Wellness Award, ISyE, 2024&ndash;2026"
+  - "George Family Fellowship for Research Excellence in Healthcare Systems, ISyE, 2024&ndash;2025"
 
-  <hr class="bio-separator">
-
-# News items (newest first)
-# Each item has: date (YYYY-MM format), content (supports Markdown)
+# Recent updates (newest first; at most three).
+# Fields: date (YYYY-MM), content (Markdown), highlight (optional, for upcoming events),
+#   expires (optional, YYYY-MM-DD): the item is hidden on builds after this date.
+#   GitHub Pages only rebuilds on a push, so review this list when you next update the site.
 news:
   - date: "2026-11"
     highlight: true
+    expires: "2026-11-02"
     content:
-      Upcoming at the **[INFORMS Annual Meeting 2026](https://meetings.informs.org/wordpress/annual/)**
-      in San Francisco (Sun, Nov 1), I'll present **Neural Index Policies for Multi-Action Restless
-      Multi-Armed Bandits with Heterogeneous Budgets** in the
-      [Job Market Showcase](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818)
-      (1:15 PM, Moscone South-203) and in the session I co-chair,
-      [Sequential Decision Making for Patient Care](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656)
-      (5:15 PM, Moscone South-105).
+      Presenting at the **INFORMS Annual Meeting** in San Francisco on Nov 1, in the Job Market
+      Showcase and in a session I co-chair. [Program details](/publications/#talks).
   - date: "2026-09"
     content:
-      Our ACCORD project with Children's Healthcare of Atlanta was featured by
-      **[Georgia Tech Research News](https://news.research.gatech.edu/2026/09/15/ai-tool-aims-catch-critically-ill-children)**.
+      Georgia Tech Research News
+      [featured our pediatric-care collaboration](https://news.research.gatech.edu/2026/09/15/ai-tool-aims-catch-critically-ill-children)
+      with Children's Healthcare of Atlanta.
   - date: "2026-06"
     content:
-      Paper **[So Many Tests, So Little Time&#58; Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints](https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282)**
-      has been published in **IISE Transactions**!
-  - date: "2026-04"
-    content:
-      Selected as a **[Finalist](https://grad.gatech.edu/news/2026-three-minute-thesis-finalists-announced)**
-      in the [Georgia Tech 3 Minute Thesis (3MT) Competition](https://www.grad.gatech.edu/3mt).
-  - date: "2026-03"
-    content:
-      Received The Philip J. and Delores A. Scott Graduate Student Health and Wellness Award
-      from ISyE for my work on support mental health and wellness in the ISyE PhD program.
-  - date: "2025-08"
-    content:
-      Wrapped up my summer as an **Applied Scientist Intern** at [AWS](https://aws.amazon.com/),
-      where I built AWS's first time-series forecasting framework for ML traffic between
-      EC2 and S3 GPU fabrics.
+      Our paper on [diagnostic assessment under time constraints](https://doi.org/10.1080/24725854.2026.2684282)
+      was published in **IISE Transactions**.

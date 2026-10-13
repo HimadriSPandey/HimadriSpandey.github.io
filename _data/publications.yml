@@ -1,23 +1,27 @@
-# Publications (newest first)
-# Fields: title, authors (list), venue, year, status, category, keywords, colab, abstract,
-#         figure, figure_caption, award, ssrn, preprint, full_paper, pdf, slides, video, code, url
+# Publications (newest first within each status)
+# Authority for titles, author order, venue and year: the publisher record (Crossref/DOI).
+# Keep the CV in sync whenever a status or citation changes.
+# Fields: id (stable anchor, never reuse), title, authors (list), venue, year, status,
+#         featured (job market paper), request (show "Request manuscript" email link),
+#         abstract (Markdown, shown under "Abstract"), award, url, preprint, pdf, slides, video, code
 # status sets the heading a paper is listed under on the publications page:
-#   journal (Journal Publications), review (Under Review), working (Working Papers),
+#   journal (Journal Articles), review (Under Review and Submitted), working (Working Papers),
 #   chapter (Book Chapters), proceedings (Conference Proceedings)
 
-- title: |
+- id: who-gets-watched
+  title: |
     Who Gets Watched? Allocating Scarce Escalation Resources on Pediatric Wards with Neural Index Policies
   year: 2026
   status: review
+  featured: true
+  request: true
   authors:
     - Himadri S. Pandey
     - Mark V. Mai
     - Naveen Muthu
     - Kai Wang
     - Gian-Gabriel P. Garcia
-  venue: Under Review — Manufacturing & Service Operations Management (M&SOM)
-  keywords: [Restless Multi-Action Bandits, Neural Index Policies, Decision-Focused Learning, Clinical Deterioration]
-  colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
+  venue: Under review at Manufacturing & Service Operations Management (M&SOM)
   award:
     - Finalist, Lee B. Lusted Student Prize Competition (QMTD), SMDM 2026
   abstract: |
@@ -34,10 +38,9 @@
     19.2 hours of lead time. **Managerial implications:** Hospitals may improve escalation decisions by
     coordinating existing pathways rather than managing each separately or using risk scores as
     stand-alone decision rules.
-  # ssrn: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=XXXXXXX"  # add once posted
-  category: [sel, seq, hc, method]
 
-- title: |
+- id: pediatric-icu-prediction
+  title: |
     Early Prediction of Pediatric ICU Transfer: A Comparative Study of Tabular and Time Series Machine Learning Models
   year: 2026
   status: review
@@ -49,59 +52,58 @@
     - Naveen Muthu
     - Gian-Gabriel P. Garcia
     - Kai Wang
-  venue: Submitted — INFORMS Journal on Data Science
-  keywords: [Clinical Deterioration, ICU Transfer, Time Series, Machine Learning, Pediatrics]
-  colab: ["Georgia Tech", "Children's Healthcare of Atlanta", "University of Washington"]
-  category: [hc, method]
+  venue: Submitted to INFORMS Journal on Data Science
 
-- title: |
+- id: rank-then-allocate
+  title: |
     Rank, Then Allocate: A Sequential Knapsack Framework for Feature-Driven Personalization
   year: 2026
   status: working
   authors:
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
-  venue: In Preparation
-  keywords: [Sequential Knapsack, Feature Ranking, Personalization, Mixed Integer Programming]
-  colab: ["Georgia Tech"]
-  category: [method]
+  venue: In preparation
 
-- title: |
+- id: cost-aware-trees
+  title: |
     Optimal Logistic Regression Trees for Cost-Aware Diagnosis
   year: 2026
   status: working
   authors:
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
-  venue: In Preparation
+  venue: In preparation
+  abstract: |
+    Jointly chooses how to group patients, which tests each group receives, and how each group's
+    results determine a diagnosis, solved exactly by dynamic programming. Preliminary concussion
+    results identify athletes with chronic medical conditions as a distinct group with its own
+    diagnostic model.
 
-- title: |
-    What Is the Impact of Impact?
-  year: 2026
-  status: working
-  authors:
-    - Himadri S. Pandey
-    - Gian-Gabriel P. Garcia
-  venue: In Preparation
+# Hidden until its question, contribution, and status can be described:
+# - id: impact-of-impact
+#   title: What Is the Impact of Impact?
+#   year: 2026
+#   status: working
+#   authors: [Himadri S. Pandey, Gian-Gabriel P. Garcia]
+#   venue: In preparation
 
-- title: |
+- id: so-many-tests
+  title: |
     So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints
   year: 2026
   status: journal
   authors:
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
-    - Paul F Pasquina
-    - Michael A. McCrea
-    - Thomas W. McAllister
     - Steven P. Broglio
+    - Thomas W. McAllister
+    - Michael A. McCrea
+    - Paul F. Pasquina
     - Landon B. Lempke
     - CARE Consortium Investigators
   venue: IISE Transactions
-  keywords: [Concussion Diagnosis, Resource-Constrained Test Design, Decision-Focused Learning]
-  colab: ["Georgia Tech", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
   award:
-    - MIF Student Poster Competition Winner, INFORMS 2024
+    - Winner, MIF Student Poster Competition, INFORMS 2024
   abstract: |
     Practitioners must often make diagnostic decisions under operational constraints; for example,
     clinicians diagnosing concussion may assess patients under time limits imposed by athletic,
@@ -110,31 +112,30 @@
     reformulations for tractability. On data from the NCAA&ndash;DoD CARE Consortium, the resulting
     batteries reduce administration time by more than 97% relative to batteries used in practice while
     maintaining AUC above 0.93.
-  full_paper: "https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282"
-  category: [sel, hc, method]
+  url: "https://doi.org/10.1080/24725854.2026.2684282"
 
-- title: |
-    Quantifying the Diagnostic Utility of Baseline Testing: An Analysis of Collegiate Athletes from the NCAA-DoD CARE Consortium Dataset
+- id: baseline-utility
+  title: |
+    Quantifying the Diagnostic Utility of Baseline Testing in Concussion Management: An Analysis of Collegiate Athletes From the NCAA-DoD CARE Consortium Dataset
   year: 2025
   status: journal
   authors:
     - Himadri S. Pandey
+    - Behshad Lahijanian
     - Julianne D. Schmidt
     - Robert C. Lynall
-    - Paul F Pasquina
-    - Michael A. McCrea
-    - Thomas W. McAllister
     - Steven P. Broglio
+    - Thomas W. McAllister
+    - Michael A. McCrea
+    - Paul F. Pasquina
     - Gian-Gabriel P. Garcia
     - CARE Consortium Investigators
-  venue: The American Journal of Sports Medicine
-  keywords: [Concussion, Baseline Testing, Diagnostic Utility, Sports Medicine]
-  colab: ["Georgia Tech", "University of Georgia", "Medical College of Wisconsin", "Indiana University", "University of Michigan"]
-  full_paper: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
-  category: [sel, hc]
+  venue: The American Journal of Sports Medicine, 53(1), 181&ndash;191
+  url: "https://doi.org/10.1177/03635465241296868"
 
-- title: |
-    Optimizing Baseline and Post-Concussion Assessments Through Factor Structure Analysis: Findings from the NCAA-DoD CARE Consortium
+- id: factor-structure
+  title: |
+    Optimizing Baseline and Post-Concussion Assessments Through Identification, Confirmation, and Equivalence of Latent Factor Structures: Findings from the NCAA-DoD CARE Consortium
   year: 2023
   status: journal
   authors:
@@ -143,18 +144,16 @@
     - Gian-Gabriel P. Garcia
     - Reid A. Syrydiuk
     - Himadri S. Pandey
-    - Paul F Pasquina
+    - Paul F. Pasquina
     - Michael A. McCrea
     - Thomas W. McAllister
     - Steven P. Broglio
     - CARE Consortium Investigators
-  venue: The Clinical Neuropsychologist
-  keywords: [Concussion Assessment, Factor Analysis, Collegiate Athletes]
-  colab: ["University of Michigan", "Georgia Tech", "Medical College of Wisconsin", "Indiana University"]
-  full_paper: "https://www.tandfonline.com/doi/abs/10.1080/13854046.2023.2271614"  
-  category: [sel, hc]
+  venue: The Clinical Neuropsychologist, 38(5), 1156&ndash;1174
+  url: "https://doi.org/10.1080/13854046.2023.2271614"
 
-- title: |
+- id: interpretable-ml-mip
+  title: |
     Designing Interpretable Machine Learning Models Using Mixed Integer Programming
   year: 2023
   status: chapter
@@ -162,46 +161,28 @@
     - Seung Ji Lee
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
-  venue: Encyclopedia of Optimization (3rd Edition), Springer
-  keywords: [Interpretable Machine Learning, Mixed Integer Programming, Optimization]
-  colab: ["Georgia Tech"]
-  full_paper: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_867-1"
-  category: [method]
+  venue: Encyclopedia of Optimization (3rd ed.), Springer
+  url: "https://link.springer.com/rwe/10.1007/978-3-030-54621-2_867-1"
 
-- title: |
+# Proceedings of CHEP 2018 (the conference talk is listed in the CV).
+- id: goofit-python
+  title: |
     A Python Upgrade to the GooFit Package for Parallel Fitting
   year: 2019
   status: proceedings
   authors:
     - Henry Schreiner
     - Himadri S. Pandey
-    - Michael Sokoloff
+    - Michael D. Sokoloff
+    - Bradley Hittle
     - Karen Tomko
     - Christoph Hasse
-    - Bradley Hittle
-  venue: EPJ Web of Conferences
-  keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
-  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "CERN"]
-  full_paper: "https://doi.org/10.1051/epjconf/201921405006"
-  category: [method]
+  venue: EPJ Web of Conferences 214, 05006 (CHEP 2018)
+  url: "https://doi.org/10.1051/epjconf/201921405006"
 
-- title: |
-    A Python Upgrade to the GooFit Package for Parallel Fitting
-  year: 2018
-  status: proceedings
-  authors:
-    - Henry Schreiner
-    - Himadri S. Pandey
-    - Michael Sokoloff
-    - Karen Tomko
-    - Christoph Hasse
-    - Bradley Hittle
-  venue: CHEP 2018 Proceedings
-  keywords: [GooFit, Parallel Computing, Maximum-Likelihood Fits, High-Energy Physics]
-  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "CERN"]
-  category: [method]
-
-- title: |
+# Published version of arXiv:1710.08826 (2017).
+- id: goofit-2
+  title: |
     GooFit 2.0
   year: 2018
   status: proceedings
@@ -210,9 +191,7 @@
     - Christoph Hasse
     - Bradley Hittle
     - Himadri S. Pandey
-    - Michael Sokoloff
+    - Michael D. Sokoloff
     - Karen Tomko
-  venue: Journal of Physics&#58; Conference Series
-  keywords: [GooFit, Parallel Computing, High-Energy Physics]
-  colab: ["University of Cincinnati", "Ohio Supercomputer Center", "Technical University of Dortmund"]
-  category: [method]
+  venue: Journal of Physics&#58; Conference Series 1085, 042014
+  url: "https://doi.org/10.1088/1742-6596/1085/4/042014"

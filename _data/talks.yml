@@ -1,80 +1,35 @@
-# Talks (newest first)
-# Fields: date, type (Talk/Keynote/Poster/Tutorial/Presentation), venue, venue_url, title, slides, video
+# Selected talks and presentations (newest first). Keep three to five; the full list is in the CV.
+# List only presentations you delivered. Fields: date, type (Talk/Poster/Refereed talk...),
+#   upcoming (true until the event has happened), venue, title, links (list of {label, url}),
+#   slides, video
 
 - date: "Nov 2026"
-  type: "Job Market Showcase"
-  venue: "INFORMS Annual Meeting, San Francisco"
-  venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818"
+  type: "Talks"
+  upcoming: true
+  venue: "INFORMS Annual Meeting, San Francisco: Job Market Showcase, and the session Sequential Decision Making for Patient Care (co-chair)"
   title: "Neural Index Policies for Multi-Action Restless Multi-Armed Bandits with Heterogeneous Budgets"
-
-- date: "Nov 2026"
-  type: "Invited Talk"
-  venue: "INFORMS Annual Meeting, San Francisco"
-  venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656"
-  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
-
-- date: "Nov 2026"
-  type: "Co-authored Talk (presented by Jade Li)"
-  venue: "INFORMS Annual Meeting, San Francisco"
-  venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=620"
-  title: "A Chance-Constrained Optimization Approach for Interpretable Concussion Diagnostics under Time Constraints"
+  links:
+    - label: "Showcase program"
+      url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818"
+    - label: "Session program"
+      url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656"
 
 - date: "2026"
-  type: "Invited Talk"
-  venue: "INFORMS Healthcare Conference"
-  title: "Neural Index Policies for Multi-Action Restless Multi-Armed Bandits with Heterogeneous Budgets"
-
-- date: "2026"
-  type: "Invited Talk"
-  venue: "INFORMS Healthcare Conference"
-  title: "So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints"
-
-- date: "2026"
-  type: "Invited Talk"
-  venue: "INFORMS Optimization Society Conference"
-  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
-
-- date: "2026"
-  type: "Presentation"
+  type: "Refereed talk"
   venue: "SMDM Annual Meeting"
   title: "Resource-Aware Decision Making for Pediatric Post-Surgical Monitoring via Neural Index Policies"
 
-- date: "2025"
-  type: "Invited Talk"
-  venue: "INFORMS Annual Meeting"
-  title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
-
-- date: "Sep 2025"
-  type: "Invited Talk"
-  venue: "INFORMS Smarter Decisions for a Better World — Flash Research Talks, Morehouse College"
-  title: "OR Outreach Flash Talk"
+- date: "2026"
+  type: "Talk"
+  venue: "INFORMS Healthcare Conference"
+  title: "So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints"
 
 - date: "2024"
-  type: "Invited Talk"
-  venue: "INFORMS Annual Meeting"
-  title: "Resource Allocation"
-
-- date: "2024"
-  type: "Presentation"
-  venue: "ACSM Annual Meeting"
-  title: "Value of Baseline Testing in Concussion Diagnosis"
-
-- date: "2024"
-  type: "Poster"
-  venue: "MIF Student Poster Competition, INFORMS Annual Meeting (Winner)"
+  type: "Poster (winner)"
+  venue: "MIF Student Poster Competition, INFORMS Annual Meeting"
   title: "Time-Constrained Concussion Diagnosis: An Analysis of the NCAA-DoD CARE Consortium Dataset"
 
-- date: "2023"
-  type: "Invited Talk"
-  venue: "INFORMS Annual Meeting"
-  title: "Optimizing Concussion Assessment: A Mixed-Integer Optimization Approach with Time Constraints"
-
-- date: "2018"
-  type: "Presentation"
-  venue: "Computing in High-Energy Physics (CHEP), Sofia, Bulgaria"
-  title: "A Python Upgrade to the GooFit Package for Parallel Fitting"
-
-- date: "2018"
-  type: "Invited Talk"
-  venue: "DIANA-HEP Workshop"
-  title: "Using GooFit with Python"
+- date: "2024"
+  type: "Refereed talk"
+  venue: "ACSM Annual Meeting"
+  title: "Value of Baseline Testing in Concussion Diagnosis"

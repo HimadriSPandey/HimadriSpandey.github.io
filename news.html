@@ -1,17 +1,26 @@
 ---
 layout: default
-title: In the News
+title: Press & Writing
 permalink: /news/
+description: "Press coverage of Himadri S. Pandey's research, and writing by Himadri S. Pandey."
 ---
 
-<section id="press" class="press-page">
-    <div class="section-container">
-        <h1 class="section-title">In the News</h1>
-        <p class="press-intro">Articles and features about my work.</p>
-        <div class="press-grid">
-            {% for item in site.data.press %}
-            {% include press-card.html item=item %}
-            {% endfor %}
-        </div>
-    </div>
+<section id="press">
+    <h1 class="section-title">Press &amp; Writing</h1>
+    {% for g in site.data.press %}
+    <h2 class="sub-title">{{ g.group }}</h2>
+    <ul class="entry-list">
+        {% for item in g.items %}
+        <li>
+            <span class="entry-date">{{ item.date }}</span>
+            <div>
+                <p class="entry-title"><a href="{{ item.url }}" rel="noopener">{{ item.title }}</a></p>
+                <p class="entry-meta">{{ item.outlet }}.{% if item.note %} {{ item.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}
+                    {% if item.also %}More coverage: {% for a in item.also %}<a href="{{ a.url }}" rel="noopener">{{ a.label }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}.{% endif %}
+                </p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
 </section>

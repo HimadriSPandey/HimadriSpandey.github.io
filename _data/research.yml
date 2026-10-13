@@ -1,96 +1,86 @@
 # Research page content (shown on /research/)
-# Source: AcademicJobSearch/materials/research-statement/research_statement_master_v3_GG.docx
-# Structure: thesis + how -> agenda map (two strands converging) -> one section per strand
-#   (papers + "next" direction) -> converging direction -> partners
-# paper fields: question, title, badge, featured (bool), headline (one number, Markdown),
-#   summary (shown under "More"), links (list of {label, url})
+# Structure: question + two-sentence framing -> one section per strand (featured studies,
+#   then ongoing work) -> future directions.
+# Keep visible text to roughly 450-650 words; details go under "Study details".
+# Formal citations live in _data/publications.yml; link to them rather than copying author lists.
+# paper fields: id (anchor), question, title, badge, headline (principal finding, Markdown),
+#   summary (shown under "Study details"), links (list of {label, url}),
+#   request (true = show a "Request manuscript" email link when no public version exists)
 
 thesis: "Who should get help, and what kind of help, when there isn't enough to go around?"
 
 how: |
-  I study how organizations allocate scarce clinical time, staff, and testing when needs evolve and
-  information is imperfect. I combine **machine learning, optimization, and sequential
-  decision-making**, and I build these models with the people who will use them.
+  I study two linked decisions: how to allocate scarce clinical attention, and which information
+  is worth collecting before allocating it. I combine **machine learning, optimization, and
+  sequential decision-making**, and I build these models with the clinicians who will use them.
 
 strands:
   - id: allocate
-    num: 1
     title: "Allocating care"
-    short: "Who gets which response when several patients need attention at once?"
     lead: |
       Hospital wards can respond to a deteriorating child with closer monitoring, a specialist ICU
-      team, or early ICU transfer, and each response has its own limited capacity.
+      team, or early ICU transfer, and each response has its own limited capacity. My work with
+      Children's Healthcare of Atlanta asks who should receive which response.
     papers:
-      - question: "Who gets watched?"
+      - id: job-market-paper
+        question: "Who gets watched?"
         title: "Allocating Scarce Escalation Resources on Pediatric Wards with Neural Index Policies"
-        badge: "Job Market Paper · Under review, M&SOM"
+        badge: "Job market paper · Under review, M&SOM"
         featured: true
-        headline: "Flags **87.4%** of children who later needed an emergent ICU transfer (vs. 79.5%), with **13.5% less** monitoring capacity and **19.2 hours** median lead time."
+        request: true
+        headline: "In a retrospective evaluation on historical CHOA data, the policy recommends an escalation before **87.4%** of critical or emergent ICU transfers (vs. 79.5% for the stronger baseline), while using **13.5% less** monitoring capacity, with a median lead time of **19.2 hours**."
         summary: |
           I model the ward as a multi-action restless bandit and develop a neural index policy that
           learns priorities across patients and response types, then assigns responses within each
-          capacity limit. Evaluated on held-out electronic health records from Children's Healthcare
-          of Atlanta, where we are now planning a silent deployment. A companion paper on early
-          prediction of pediatric ICU transfer is under review at *INFORMS Journal on Data Science*.
-    next:
-      title: "Care when clinicians' responses evolve"
-      text: "Recommendations change how clinicians respond to later ones. I will design allocation policies that account for this shared, evolving response."
+          capacity limit. The results above come from held-out historical records; we are planning
+          a silent deployment with CHOA to evaluate the policy prospectively. A companion paper I
+          coauthored, on early prediction of pediatric ICU transfer, has been submitted to
+          *INFORMS Journal on Data Science*.
 
   - id: learn
-    num: 2
     title: "Choosing what to learn"
-    short: "Which information is worth its cost, and for whom?"
     lead: |
       Good allocation depends on what clinicians know, and collecting that information takes staff
-      time. I study this in concussion diagnosis with data on 47,860 athletes and cadets from the
-      NCAA&ndash;DoD CARE Consortium.
+      time. I study this in concussion diagnosis with the NCAA&ndash;DoD CARE Consortium.
     papers:
-      - question: "Who needs a baseline?"
-        title: "Quantifying the Diagnostic Utility of Baseline Testing in Concussion Management"
-        badge: "The American Journal of Sports Medicine, 2025"
-        headline: "For **86.7%** of concussed athletes, the pre-season baseline does not change the diagnosis."
-        summary: |
-          Symptoms fluctuate day to day, so a baseline can add noise as well as information. Comparing
-          classifiers built with and without baselines, I measure when a baseline changes the
-          diagnosis. A follow-up study finds routine baseline testing costs nearly 600 staff hours per
-          1,000 athletes each season. This work informed baseline-testing guidance for high schools in
-          Athens, Georgia.
-        links:
-          - label: "Paper"
-            url: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
-      - question: "Which tests fit in the time available?"
-        title: "So Many Tests, So Little Time: Diagnostic Assessment under Time Constraints"
+      - id: time-constrained-diagnosis
+        question: "Which tests fit in the time available?"
+        title: "So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints"
         badge: "IISE Transactions, 2026"
-        headline: "Cuts assessment time by **more than 97%** while maintaining high accuracy (AUC above 0.93)."
+        headline: "Designs test batteries that take **more than 97% less time** to administer than batteries used in practice, while keeping AUC above 0.93."
         summary: |
           A chance-constrained mixed-integer program that selects tests and fits an interpretable
           diagnostic model together, treating each test's administration time as uncertain.
-          Clinicians set both the time budget and the acceptable risk of exceeding it. Winner, INFORMS
-          MIF Student Poster Competition (2024); now being extended to military settings.
+          Clinicians set both the time budget and the acceptable risk of exceeding it. Winner,
+          INFORMS MIF Student Poster Competition (2024).
         links:
           - label: "Paper"
-            url: "https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282"
-      - question: "Who gets which test?"
-        title: "Optimal Logistic Regression Trees for Cost-Aware Diagnosis"
-        badge: "In preparation"
-        headline: "Tailors which tests each patient group receives, matching the accuracy of using every test."
+            url: "https://doi.org/10.1080/24725854.2026.2684282"
+      - id: baseline-testing
+        question: "Who needs a baseline?"
+        title: "Quantifying the Diagnostic Utility of Baseline Testing in Concussion Management"
+        badge: "The American Journal of Sports Medicine, 2025"
+        headline: "In our CARE Consortium sample, adding pre-season baseline scores did not change the classifier's diagnosis for **86.7%** of concussed athletes."
         summary: |
-          Jointly chooses how to group patients, which tests each group receives, and how each
-          group's results determine a diagnosis, solved exactly by dynamic programming. In concussion,
-          it identifies athletes with chronic medical conditions as a distinct group with its own
-          diagnostic model.
-    next:
-      title: "What to learn before allocating care"
+          Symptoms fluctuate day to day, so a baseline can add noise as well as information. By
+          comparing classifiers built with and without baselines, I measure when a baseline changes
+          the diagnosis. A follow-up study finds routine baseline testing costs nearly 600 staff
+          hours per 1,000 athletes each season.
+        links:
+          - label: "Paper"
+            url: "https://doi.org/10.1177/03635465241296868"
+    ongoing: |
+      **Ongoing work.** *Optimal logistic regression trees for cost-aware diagnosis* jointly
+      chooses how to group patients, which tests each group receives, and how each group's results
+      determine a diagnosis. In preliminary concussion results, it identifies athletes with chronic
+      medical conditions as a distinct group with its own diagnostic model.
+
+future:
+  title: "Where this leads"
+  items:
+    - title: "Care when clinicians' responses evolve"
+      text: "Recommendations change how clinicians respond to later ones. I will design allocation policies that account for this shared, evolving response."
+    - title: "What to learn before allocating care"
       text: "Deciding whom to assess next and when to act, when assessment and care draw on the same scarce staff."
-
-converge:
-  title: "Outreach & continuing mental health care"
-  text: |
-    Bringing both strands together, I will work with outreach organizations, mental health providers,
-    and people with lived experience of homelessness on how to balance new contacts with follow-up
-    when sustained care depends on capacity across services.
-
-partners:
-  - "Children's Healthcare of Atlanta"
-  - "NCAA&ndash;DoD CARE Consortium"
-  - "Athens, GA high schools"
+    - title: "Outreach and continuing mental health care"
+      text: "Working with outreach organizations, mental health providers, and people with lived experience of homelessness on how to balance new contacts with follow-up when sustained care depends on capacity across services. This builds on my [mental health leadership at Georgia Tech](/service/)."

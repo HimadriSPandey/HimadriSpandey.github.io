@@ -1,25 +1,42 @@
+{% assign about = site.data.about %}
 <section class="hero" id="about">
-    <div class="hero-container">
-        <div class="landing-main">
-            <div class="bio">
-                {{ site.data.about.content | markdownify }}
-            </div>
-
-            {% if site.data.about.news and site.data.about.news.size > 0 %}
-            <aside class="news-section">
-                <h3>Recent Updates</h3>
-                <ul class="news-list">
-                    {% for item in site.data.about.news %}
-                    <li{% if item.highlight %} class="news-highlight"{% endif %}>
-                        <span class="news-date">[{{ item.date }}]</span>
-                        {{ item.content | markdownify | remove: '<p>' | remove: '</p>' }}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </aside>
-            {% endif %}
-
-            {% include impact.html %}
-        </div>
+    <div class="bio">
+        {{ about.content | markdownify }}
     </div>
+
+    {% if about.links %}
+    <ul class="quick-links">
+        {% for l in about.links %}<li><a href="{{ l.url | relative_url }}">{{ l.label }}</a></li>{% endfor %}
+        <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+    </ul>
+    {% endif %}
+
+    {% if about.recognition %}
+    <div class="recognition" id="recognition">
+        <h2>Selected recognition</h2>
+        <ul>
+            {% for r in about.recognition %}<li>{{ r }}</li>{% endfor %}
+        </ul>
+        <p class="recognition-more">Full list in the <a href="{{ site.social.cv | relative_url }}">CV</a>.</p>
+    </div>
+    {% endif %}
+
+    {% assign today = site.time | date: '%Y-%m-%d' %}
+    {% if about.news and about.news.size > 0 %}
+    <div class="news-section">
+        <h2>Recent updates</h2>
+        <ul class="news-list">
+            {% for item in about.news limit: 3 %}
+            {% assign expired = false %}
+            {% if item.expires %}{% if item.expires < today %}{% assign expired = true %}{% endif %}{% endif %}
+            {% unless expired %}
+            <li{% if item.highlight %} class="news-highlight"{% endif %}>
+                <span class="news-date">{{ item.date }}</span>
+                {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+            </li>
+            {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
 </section>

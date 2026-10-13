@@ -1,71 +1,52 @@
 <section id="publications">
-    <div class="section-container reveal">
-        <h2 class="section-title">Publications</h2>
+    <h1 class="section-title">Publications</h1>
+    <p class="page-jump">
+        <a href="#who-gets-watched">Job market paper</a> &middot;
+        <a href="#talks">Selected talks</a> &middot;
+        <a href="{{ site.social.google_scholar }}" rel="noopener">Google Scholar</a>
+    </p>
 
-        {% assign pub_groups = "journal:Journal Publications|review:Under Review|working:Working Papers|chapter:Book Chapters|proceedings:Conference Proceedings" | split: "|" %}
-        {% for group in pub_groups %}
-        {% assign group_key = group | split: ":" | first %}
-        {% assign group_label = group | split: ":" | last %}
-        {% assign group_pubs = site.data.publications | where: "status", group_key %}
-        {% if group_pubs.size > 0 %}
-        <h3 class="pub-group-title">{{ group_label }}</h3>
-        {% for pub in group_pubs %}
-        {% capture pub_id %}pub-{{ group_key }}-{{ forloop.index }}{% endcapture %}
-        <div class="pub-item">
-            <div class="pub-title">
-                {% if pub.url %}<a href="{{ pub.url }}">{{ pub.title | strip }}</a>{% elsif pub.full_paper %}<a href="{{ pub.full_paper }}">{{ pub.title | strip }}</a>{% else %}{{ pub.title | strip }}{% endif %}
-            </div>
-            <div class="pub-meta">
-                {% for author in pub.authors %}{% assign author_clean = author | replace: '*', '' | replace: '†', '' | strip %}{% if author_clean == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
-                <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}.
-            </div>
-            {% if pub.award %}
-            <div class="pub-award-section">
-                {% if pub.award.first %}{% for award_item in pub.award %}🏆 {{ award_item }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}{% else %}🏆 {{ pub.award }}{% endif %}
-            </div>
-            {% endif %}
-            {% if pub.abstract or pub.figure or pub.ssrn or pub.preprint or pub.pdf or pub.slides or pub.video or pub.code %}
-            <div class="pub-links">
-                {% if pub.abstract or pub.figure %}
-                <button class="pub-link pub-toggle" onclick="toggleAbstract('{{ pub_id }}', this)">Abstract ▼</button>
-                {% endif %}
-                {% if pub.ssrn %}<a href="{{ pub.ssrn }}" class="pub-link">SSRN</a>{% endif %}
-                {% if pub.preprint %}<a href="{{ pub.preprint }}" class="pub-link">Preprint</a>{% endif %}
-                {% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-link">PDF</a>{% endif %}
-                {% if pub.slides %}<a href="{{ pub.slides }}" class="pub-link">Slides</a>{% endif %}
-                {% if pub.video %}<a href="{{ pub.video }}" class="pub-link">Video</a>{% endif %}
-                {% if pub.code %}<a href="{{ pub.code }}" class="pub-link">Code</a>{% endif %}
-            </div>
-            {% endif %}
-            {% if pub.abstract or pub.figure %}
-            <div class="pub-abstract" id="{{ pub_id }}" style="display: none;">
-                {% if pub.figure %}
-                <div class="pub-figure">
-                    <img src="{{ pub.figure | relative_url }}" alt="{{ pub.title | strip }} figure">
-                    {% if pub.figure_caption %}
-                    <div class="pub-figure-caption">{{ pub.figure_caption }}</div>
-                    {% endif %}
-                </div>
-                {% endif %}
-                {% if pub.abstract %}
-                <div class="pub-abstract-text">
-                    <strong>Abstract:</strong> {{ pub.abstract | markdownify }}
-                </div>
-                {% endif %}
-            </div>
-            {% endif %}
-        </div>
+    {% assign pub_groups = "featured:Job Market Paper|journal:Journal Articles|review:Under Review and Submitted|working:Working Papers|chapter:Book Chapters|proceedings:Conference Proceedings" | split: "|" %}
+    {% for group in pub_groups %}
+    {% assign group_key = group | split: ":" | first %}
+    {% assign group_label = group | split: ":" | last %}
+    {% if group_key == "featured" %}
+    {% assign group_pubs = site.data.publications | where: "featured", true %}
+    {% else %}
+    {% assign group_pubs = site.data.publications | where: "status", group_key | where_exp: "p", "p.featured != true" %}
+    {% endif %}
+    {% if group_pubs.size > 0 %}
+    <h2 class="pub-group-title">{{ group_label }}</h2>
+    {% for pub in group_pubs %}
+    <div class="pub-item{% if pub.featured %} pub-featured{% endif %}" id="{{ pub.id }}">
+        <p class="pub-title">
+            {% if pub.url %}<a href="{{ pub.url }}">{{ pub.title | strip }}</a>{% else %}{{ pub.title | strip }}{% endif %}
+        </p>
+        <p class="pub-meta">
+            {% for author in pub.authors %}{% if author == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+            <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}.
+        </p>
+        {% for award_item in pub.award %}
+        <p class="pub-award">{{ award_item }}</p>
         {% endfor %}
+        {% if pub.request or pub.preprint or pub.pdf or pub.slides or pub.video or pub.code %}
+        <p class="pub-links">
+            {% if pub.request %}<a href="mailto:{{ site.author.email }}?subject={{ 'Manuscript request: ' | append: pub.title | strip | url_encode }}">Request manuscript</a>{% endif %}
+            {% if pub.preprint %}<a href="{{ pub.preprint }}">Preprint</a>{% endif %}
+            {% if pub.pdf %}<a href="{{ pub.pdf }}">PDF</a>{% endif %}
+            {% if pub.slides %}<a href="{{ pub.slides }}">Slides</a>{% endif %}
+            {% if pub.video %}<a href="{{ pub.video }}">Video</a>{% endif %}
+            {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+        </p>
         {% endif %}
-        {% endfor %}
+        {% if pub.abstract %}
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            {{ pub.abstract | markdownify }}
+        </details>
+        {% endif %}
     </div>
-
-    <script>
-    function toggleAbstract(id, button) {
-        const abstractDiv = document.getElementById(id);
-        const open = abstractDiv.style.display === 'none';
-        abstractDiv.style.display = open ? 'block' : 'none';
-        button.innerHTML = open ? 'Abstract ▲' : 'Abstract ▼';
-    }
-    </script>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 </section>

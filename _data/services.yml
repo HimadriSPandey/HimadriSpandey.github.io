@@ -1,53 +1,43 @@
-# Academic service - organized by category
-# Fields:
-#   - title: Category title
-#   - items: List of specific items (col1, col2 [, col3], optional comment)
+# Service & Leadership page (shown on /service/)
+# Fields per section: title, intro (optional, Markdown), items (date, text, detail optional Markdown)
+# Add a concrete contribution only where you can substantiate it.
 
-- title: "Session Chair"
+- title: "Leadership and Well-Being"
+  intro: |
+    Recognized with the Philip J. and Delores A. Scott Graduate Student Health and Wellness Award
+    from ISyE in 2024, 2025, and 2026.
   items:
-    - col1: "2026"
-      col2: "INFORMS Annual Meeting — Co-Chair, Sequential Decision Making for Patient Care"
-    - col1: "2025"
-      col2: "IISE Annual Meeting"
-    - col1: "2024"
-      col2: "INFORMS Annual Meeting"
+    - date: "2023 – present"
+      text: "Bee Well Ambassador, H. Milton Stewart School of ISyE"
+      detail: "Peer-led initiative supporting graduate-student mental health and well-being in ISyE."
+    - date: "Summer 2024"
+      text: "Data analysis project, Center for Mental Health Care & Resources, Georgia Tech"
+      detail: "Analyzed counseling-center appointment data to assess how quickly students reached care, which resources they sought, and where they disengaged."
+    - date: "2023 – 2025"
+      text: "Mental Health & Well-Being Committee, Graduate Student Government Association"
+    - date: "2023 – 2024"
+      text: "Member, Mental Health Joint Allocation Committee, Georgia Tech"
+    - date: "2024 – 2025"
+      text: "Graduate Student Representative, Emerging Leaders Advisory Board"
+      detail: "Represented graduate students in monthly meetings with Georgia Tech administrators."
 
-
-- title: "University Service"
+- title: "Professional Service"
   items:
-    - col1: "2023 – Present"
-      col2: "Bee Well Ambassador, H. Milton Stewart School of ISyE, Georgia Tech"
-      comment: |
-        Peer-led initiative supporting graduate-student mental health and well-being in ISyE.
-
-    - col1: "2024 – 2025"
-      col2: "Graduate Student Representative, Emerging Leaders Advisory Board, Georgia Tech"
-      comment: |
-        Met monthly with Georgia Tech administrators to provide graduate-student input on
-        policies, programs, and resources — including graduate funding models, housing,
-        career development, international student engagement, and well-being initiatives.
-
-    - col1: "2023 – 2025"
-      col2: "Mental Health & Well-Being Committee, Graduate Student Government Association, Georgia Tech"
-      comment: |
-        Served on the committee to promote mental health and well-being initiatives for graduate students at Georgia Tech.
-
-- title: "Conference Abstract Reviewer"
-  items:
-    - col1: "2026"
-      col2: "SMDM Annual Meeting"
-
-- title: "Journal Reviewer"
-  items:
-    - col1: "2025"
-      col2: "BMJ Open Sport & Exercise Medicine"
+    - date: "2024, 2026"
+      text: "INFORMS Annual Meeting: session chair (2024); co-chair, Sequential Decision Making for Patient Care (2026)"
+    - date: "2025"
+      text: "IISE Annual Meeting: session chair"
+    - date: "2026"
+      text: "Abstract reviewer, SMDM Annual Meeting"
+    - date: "2025"
+      text: "Journal reviewer, BMJ Open Sport & Exercise Medicine"
 
 - title: "Outreach"
   items:
-    - col1: "Sep 2025"
-      col2: "Invited Speaker — OR Outreach, INFORMS Flash Research Talks, Morehouse College, Atlanta, GA"
+    - date: "Sep 2025"
+      text: "Flash research talk on operations research, INFORMS outreach event at Morehouse College"
 
-- title: "Student Organization Leadership"
+- title: "Earlier Leadership"
   items:
-    - col1: "May 2017 – May 2018"
-      col2: "President, UC CubeCats, University of Cincinnati"
+    - date: "2017 – 2018"
+      text: "President, UC CubeCats student satellite program, University of Cincinnati"

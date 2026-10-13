@@ -7,8 +7,8 @@ baseurl: ""
 # Personal info
 author:
   name: Himadri S. Pandey
-  email: hpandey30 at gatech dot edu
-  photo: /assets/images/headshot.png
+  email: hpandey30@gatech.edu
+  photo: /assets/images/headshot.jpg
   titles:
     - title: PhD Candidate, Machine Learning
   school: Georgia Institute of Technology
@@ -21,6 +21,10 @@ social:
   github: "https://github.com/HimadriSPandey"
   linkedin: "https://www.linkedin.com/in/himadri-s-pandey/"
   cv: "/assets/pdf/Pandey_Himadri_CV.pdf"
+
+# Bump this when CSS/JS/favicon change so browsers fetch the new files
+# (a fixed string keeps asset URLs stable across content-only rebuilds).
+asset_version: "2026-10-13"
 
 # Build settings
 markdown: kramdown

@@ -1,47 +1,25 @@
-// Mobile menu toggle
+// Mobile menu toggle. Without JavaScript the links are always shown (see .no-js in style.css).
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');
 
 if (mobileMenuBtn && navLinks) {
+    const setOpen = (open) => {
+        navLinks.classList.toggle('active', open);
+        mobileMenuBtn.setAttribute('aria-expanded', String(open));
+    };
+
     mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        setOpen(mobileMenuBtn.getAttribute('aria-expanded') !== 'true');
     });
 
-    // Close menu when clicking a link
     navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
+        link.addEventListener('click', () => setOpen(false));
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenuBtn.getAttribute('aria-expanded') === 'true') {
+            setOpen(false);
+            mobileMenuBtn.focus();
+        }
     });
 }
-
-// Scroll reveal animation
-const revealElements = document.querySelectorAll('.reveal');
-
-const revealOnScroll = () => {
-    revealElements.forEach(el => {
-        const elementTop = el.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (elementTop < windowHeight - 100) {
-            el.classList.add('visible');
-        }
-    });
-};
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});

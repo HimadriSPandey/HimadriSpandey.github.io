@@ -1,20 +1,17 @@
-<nav>
+<nav aria-label="Main">
     <div class="nav-container">
         <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.author.name }}</a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>About</a></li>
-            <li><a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} class="active"{% endif %}>Research</a></li>
-            <li><a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active"{% endif %}>Publications</a></li>
-            <li><a href="{{ '/awards/' | relative_url }}"{% if page.url == '/awards/' %} class="active"{% endif %}>Awards</a></li>
-            <li><a href="{{ '/service/' | relative_url }}"{% if page.url == '/service/' %} class="active"{% endif %}>Service</a></li>
-            <li><a href="{{ '/teaching/' | relative_url }}"{% if page.url == '/teaching/' %} class="active"{% endif %}>Teaching</a></li>
-            <li><a href="{{ site.social.cv | relative_url }}" target="_blank" rel="noopener">CV</a></li>
-            <li><a href="{{ '/news/' | relative_url }}" class="nav-news{% if page.url == '/news/' %} active{% endif %}">In the News</a></li>
-        </ul>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>About</a></li>
+            <li><a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} class="active" aria-current="page"{% endif %}>Research</a></li>
+            <li><a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active" aria-current="page"{% endif %}>Publications</a></li>
+            <li><a href="{{ '/teaching/' | relative_url }}"{% if page.url == '/teaching/' %} class="active" aria-current="page"{% endif %}>Teaching</a></li>
+            <li><a href="{{ site.social.cv | relative_url }}">CV (PDF)</a></li>
+        </ul>
     </div>
 </nav>

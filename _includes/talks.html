@@ -1,19 +1,19 @@
 <section id="talks">
-    <div class="section-container reveal">
-        <h2 class="section-title">Invited Talks</h2>
-        <table class="talks-table">
-            {% for talk in site.data.talks %}
-            <tr class="talk-row">
-                <td class="talk-date">{{ talk.date }}</td>
-                <td class="talk-content">
-                    {{ talk.type | default: "Talk" }} at
-                    {% if talk.venue_url %}<a href="{{ talk.venue_url }}">{{ talk.venue }}</a>{% else %}{{ talk.venue }}{% endif %}
-                    on "{{ talk.title }}"
-                    {% if talk.slides %}<a href="{{ talk.slides | relative_url }}">[Slides]</a>{% endif %}
-                    {% if talk.video %}<a href="{{ talk.video }}">[Video]</a>{% endif %}
-                </td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
+    <h2 class="section-title">Selected Talks and Presentations</h2>
+    <ul class="entry-list">
+        {% for talk in site.data.talks %}
+        <li>
+            <span class="entry-date">{{ talk.date }}</span>
+            <div>
+                <p class="entry-title">&ldquo;{{ talk.title }}&rdquo;</p>
+                <p class="entry-meta">{% if talk.upcoming %}<strong>Upcoming.</strong> {% endif %}{{ talk.type }}, {{ talk.venue }}.
+                    {% for l in talk.links %}<a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
+                    {% if talk.slides %}<a href="{{ talk.slides | relative_url }}">Slides</a>{% endif %}
+                    {% if talk.video %}<a href="{{ talk.video }}">Video</a>{% endif %}
+                </p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <p class="list-more">The full list of presentations is in the <a href="{{ site.social.cv | relative_url }}">CV</a>.</p>
 </section>
