@@ -1,0 +1,40 @@
+<div class="profile-card">
+    <img src="{{ site.author.photo | default: 'https://via.placeholder.com/200x200?text=Photo' | relative_url }}" 
+         alt="{{ site.author.name }}" class="profile-image">
+    <h1>{{ site.author.name }}</h1>
+    {% if site.author.chinese_name %}<h2>{{ site.author.chinese_name }}</h2>{% endif %}
+    {% if site.author.titles %}
+    {% for til in site.author.titles %}
+    <p class="profile-title">
+        {{ til.title }}<br>
+    </p>
+    {% endfor %}
+    {% endif %}
+    <p class="profile-affiliation">{{ site.author.dept }}</p>
+    <p class="profile-affiliation">{{ site.author.school }}</p>
+    <p class="profile-affiliation">
+        <i class="fas fa-location-crosshairs"></i>
+        {{ site.author.location }}
+    </p>
+    <div style="margin: 1rem 0;"></div>
+    <ul class="profile-links">
+        {% if site.social.cv and site.social.cv != "" %}
+        <li><a href="{{ site.social.cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i><span>CV (PDF)</span></a></li>
+        {% endif %}
+        {% if site.social.google_scholar and site.social.google_scholar != "" %}
+        <li><a href="{{ site.social.google_scholar }}" target="_blank" rel="noopener"><i class="fa-brands fa-google-scholar"></i><span>Google Scholar</span></a></li>
+        {% endif %}
+        {% if site.social.github and site.social.github != "" %}
+        <li><a href="{{ site.social.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+        {% endif %}
+        {% if site.social.twitter and site.social.twitter != "" %}
+        <li><a href="{{ site.social.twitter }}" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i><span>Twitter/X</span></a></li>
+        {% endif %}
+        {% if site.social.linkedin and site.social.linkedin != "" %}
+        <li><a href="{{ site.social.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a></li>
+        {% endif %}
+        {% if site.author.email %}
+        <li><span class="profile-link-text"><i class="fa-solid fa-envelope"></i><span>{{ site.author.email }}</span></span></li>
+        {% endif %}
+    </ul>
+</div>

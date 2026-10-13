@@ -166,12 +166,7 @@ nav {
 }
 
 .hero-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 380px 1fr;
-    gap: 4rem;
-    align-items: start;
+    max-width: 1200px;
 }
 
 .profile-card {
@@ -1524,19 +1519,6 @@ section.press-preview {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .profile-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -1593,12 +1575,7 @@ section.press-preview {
     transform: none;
 }
 
-/* Landing page: profile | bio + practice | news */
-.hero-container {
-    grid-template-columns: 400px minmax(0, 1fr);
-    gap: 3.5rem;
-}
-
+/* Landing page: bio + practice | news */
 .bio > :last-child.bio-separator {
     display: none;
 }
@@ -1666,87 +1643,110 @@ section.press-preview {
     margin-bottom: 0.2rem;
 }
 
-/* Fit the landing page to one screen on desktop; inner panels scroll if needed */
-@media (min-width: 1101px) and (min-height: 640px) {
-    body.home {
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-    }
-
-    body.home footer {
-        display: none;
-    }
-
-    body.home .hero {
-        flex: 1;
-        min-height: 0;
-        padding: 90px 2rem 20px;
-    }
-
-    body.home .hero-container {
-        height: 100%;
-        align-items: stretch;
-    }
-
-    body.home .profile-card {
-        align-self: center;
-    }
-
-    body.home .profile-image {
-        width: min(300px, 36vh);
-        height: min(300px, 36vh);
-        margin-bottom: 1.25rem;
-    }
-
-    body.home .profile-card h1 {
-        font-size: 2.2rem;
-    }
-
-    body.home .profile-title {
-        font-size: 1.1rem;
-    }
-
-    body.home .profile-affiliation {
-        font-size: 1.02rem;
-    }
-
-    body.home .profile-links a,
-    body.home .profile-links .profile-link-text {
-        font-size: 1.05rem;
-    }
-
-    body.home .landing-main {
-        min-height: 0;
-        padding-right: 0.75rem;
-        overflow-y: auto;
-        scrollbar-width: thin;
-    }
-
-    body.home .bio {
-        padding-top: 0;
-    }
-
-    body.home .bio p {
-        font-size: 1.22rem;
-        margin-bottom: 0.6rem;
-        line-height: 1.55;
+@media (max-width: 900px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
     }
 }
 
+/* Site shell: profile sidebar on the left of every page */
+body {
+    background: var(--bg-section);
+}
+
+.site-shell {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 400px minmax(0, 1fr);
+    gap: 3.5rem;
+}
+
+.site-sidebar {
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.site-sidebar .profile-card {
+    margin: auto 0;
+}
+
+.site-sidebar .profile-image {
+    width: min(300px, 36vh);
+    height: min(300px, 36vh);
+    margin-bottom: 1.25rem;
+}
+
+.site-sidebar .profile-card h1 {
+    font-size: 2.2rem;
+}
+
+.site-sidebar .profile-title {
+    font-size: 1.1rem;
+}
+
+.site-sidebar .profile-affiliation {
+    font-size: 1.02rem;
+}
+
+.site-sidebar .profile-links a,
+.site-sidebar .profile-links .profile-link-text {
+    font-size: 1.05rem;
+}
+
+.site-main {
+    min-width: 0;
+}
+
+.site-main section,
+.site-main .subpage > section {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+}
+
+body.home .hero {
+    padding-top: 90px;
+}
+
+body.home .bio {
+    padding-top: 0;
+}
+
 @media (max-width: 1100px) {
-    .hero-container {
+    .site-shell {
         grid-template-columns: 320px minmax(0, 1fr);
+        gap: 2.5rem;
     }
 }
 
 @media (max-width: 900px) {
-    .hero-container {
+    .site-shell {
         grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0 1rem;
     }
 
-    .impact-grid {
-        grid-template-columns: 1fr;
+    .site-sidebar {
+        position: static;
+        height: auto;
+        padding-top: 100px;
+        overflow: visible;
+    }
+
+    /* On phones the card only shows on the home page, above the bio */
+    body:not(.home) .site-sidebar {
+        display: none;
+    }
+
+    body.home .hero {
+        padding-top: 2rem;
     }
 }

@@ -15,7 +15,14 @@
 <body{% if page.url == "/" %} class="home"{% endif %}>
     {% include nav.html %}
 
-    {{ content }}
+    <div class="site-shell">
+        <aside class="site-sidebar">
+            {% include profile-card.html %}
+        </aside>
+        <main class="site-main">
+            {{ content }}
+        </main>
+    </div>
 
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
