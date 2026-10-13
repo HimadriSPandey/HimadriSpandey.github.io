@@ -1,28 +1,29 @@
 # Your bio/about content (supports Markdown)
 content: |
-  I am a **PhD Candidate** at **Georgia Tech** in the
+  I am a Machine Learning PhD Candidate at Georgia Tech's
   [H. Milton Stewart School of Industrial and Systems Engineering](https://www.isye.gatech.edu/),
-  advised by **[Dr. Gian-Gabriel Garcia](https://giangabrielgarcia.com/)**. I study how organizations
-  should allocate **scarce resources** (clinician attention, diagnostic time, monitoring capacity)
-  when decisions are made repeatedly, under uncertainty, and with imperfect data. My work sits in
-  **healthcare operations** and **data-driven decision-making**: I combine optimization and
-  sequential decision models with machine learning that is trained for the decision it supports,
-  not only for prediction accuracy.
+  advised by [Dr. Gian-Gabriel Garcia](https://giangabrielgarcia.com/).
+  **I am on the job market.**
 
-  My research is built with practitioners. With **[Children's Healthcare of Atlanta](https://www.choa.org/)**,
-  I study how hospital wards should decide which deteriorating children receive closer
-  monitoring, specialist assessment, or ICU transfer when staff and beds are limited
-  ([research](/research/)). With the **NCAA&ndash;DoD CARE Consortium**, I design concussion
-  assessments that fit the time clinicians actually have.
+  My research asks how organizations should allocate scarce resources, such as clinician attention,
+  diagnostic time, and monitoring capacity, when decisions repeat under uncertainty and with
+  imperfect data. I work in healthcare operations and data-driven decision-making, combining
+  optimization and sequential decision models with machine learning trained for the decision it
+  supports, not only for prediction accuracy.
 
-  **I am on the 2026&ndash;27 academic job market.**
+  I build this work with practitioners:
+
+  - **[Children's Healthcare of Atlanta](https://www.choa.org/):** deciding which deteriorating
+    children on hospital wards receive closer monitoring, specialist assessment, or ICU transfer
+    when staff and beds are limited ([research](/research/)).
+  - **NCAA&ndash;DoD CARE Consortium:** designing concussion assessments that give each athlete
+    the right tests, within the time and resources clinicians have.
 
   <hr class="bio-separator">
 
-  Before my PhD, I spent three years as an **Applied Scientist** at
-  [Lucas Systems](https://www.lucasware.com/) (2019&ndash;2022) building optimization and ML
-  tools for warehouse operations, and in 2025 I was an **Applied Scientist Intern** at
-  [AWS](https://aws.amazon.com/).
+  Before my PhD, I was an Applied Scientist at [Lucas Systems](https://www.lucasware.com/)
+  (2019&ndash;2022), building optimization and ML tools for warehouse operations. In 2025, I was
+  an Applied Scientist Intern at [AWS](https://aws.amazon.com/).
 
   <hr class="bio-separator">
 
@@ -38,10 +39,7 @@ news:
       [Job Market Showcase](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818)
       (1:15 PM, Moscone South-203) and in the session I co-chair,
       [Sequential Decision Making for Patient Care](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656)
-      (5:15 PM, Moscone South-105). Jade Li will also present our joint work,
-      **A Chance-Constrained Optimization Approach for Interpretable Concussion Diagnostics under Time Constraints**,
-      in [Trustworthy and Interpretable AI for Decision-Making](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=620)
-      (1:30 PM, Moscone South-104).
+      (5:15 PM, Moscone South-105).
   - date: "2026-09"
     content:
       Our ACCORD project with Children's Healthcare of Atlanta was featured by
