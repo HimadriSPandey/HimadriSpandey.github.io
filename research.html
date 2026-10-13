@@ -6,52 +6,75 @@ permalink: /research/
 
 {% assign r = site.data.research %}
 <section id="research" class="research-page">
-    <div class="section-container">
+    <div class="section-container rs-wrap">
         <h1 class="section-title">Research</h1>
-        <div class="research-intro">{{ r.intro | markdownify }}</div>
+        <p class="rs-thesis">{{ r.thesis }}</p>
+        <div class="rs-how">{{ r.how | markdownify }}</div>
 
-        {% for theme in r.themes %}
-        <div class="research-theme">
-            <h2 class="research-theme-title"><span class="research-theme-num">{{ forloop.index }}</span>{{ theme.title }}</h2>
-            <div class="research-theme-lead">{{ theme.lead | markdownify }}</div>
+        <div class="rs-map" role="navigation" aria-label="Research agenda">
+            <div class="rs-map-row">
+                {% for s in r.strands %}
+                <a class="rs-map-node" href="#{{ s.id }}">
+                    <span class="rs-map-kicker">Strand {{ s.num }}</span>
+                    <strong>{{ s.title }}</strong>
+                    <span>{{ s.short }}</span>
+                </a>
+                {% endfor %}
+            </div>
+            <div class="rs-map-join" aria-hidden="true"></div>
+            <a class="rs-map-node rs-map-goal" href="#converge">
+                <span class="rs-map-kicker">Where it leads</span>
+                <strong>{{ r.converge.title }}</strong>
+            </a>
+        </div>
 
-            {% for p in theme.projects %}
-            <article class="research-card{% if p.tag == 'Job Market Paper' %} research-card-featured{% endif %}">
-                <p class="research-tag">{{ p.tag }}</p>
-                <p class="research-question">{{ p.question }}</p>
-                <h3 class="research-title">{{ p.title }}</h3>
-                {{ p.summary | markdownify }}
-
-                {% if p.highlights %}
-                <ul class="research-findings">
-                    {% for f in p.highlights %}<li>{{ f | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}
-                </ul>
-                {% endif %}
-
-                {% if p.status %}
-                <p class="research-meta"><span>{{ p.status }}</span></p>
-                {% endif %}
-                {% if p.links %}
-                <div class="pub-links">
-                    {% for l in p.links %}<a href="{{ l.url }}" class="pub-link" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}
+        {% for s in r.strands %}
+        <div class="rs-strand" id="{{ s.id }}">
+            <div class="rs-strand-head">
+                <h2><span class="rs-num">{{ s.num }}</span>{{ s.title }}</h2>
+                <div class="rs-strand-lead">{{ s.lead | markdownify }}</div>
+                {% if s.next %}
+                <div class="rs-next">
+                    <span class="rs-next-label">Next &rarr;</span>
+                    <strong>{{ s.next.title }}</strong>
+                    <p>{{ s.next.text }}</p>
                 </div>
                 {% endif %}
-            </article>
-            {% endfor %}
+            </div>
+
+            <div class="rs-papers">
+                {% for p in s.papers %}
+                <article class="rs-paper{% if p.featured %} rs-paper-featured{% endif %}">
+                    <p class="rs-question">{{ p.question }}</p>
+                    <h3>{{ p.title }}</h3>
+                    <div class="rs-meta-row">
+                        <span class="rs-badge">{{ p.badge }}</span>
+                        {% for l in p.links %}<a href="{{ l.url }}" class="rs-link" target="_blank" rel="noopener">{{ l.label }} &nearr;</a>{% endfor %}
+                    </div>
+                    <p class="rs-headline">{{ p.headline | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+                    {% if p.summary %}
+                    <details>
+                        <summary>More</summary>
+                        {{ p.summary | markdownify }}
+                    </details>
+                    {% endif %}
+                </article>
+                {% endfor %}
+            </div>
         </div>
         {% endfor %}
 
-        <div class="research-theme">
-            <h2 class="research-theme-title">Looking ahead</h2>
-            <div class="research-theme-lead">{{ r.future_lead | markdownify }}</div>
-            <div class="research-future">
-                {% for f in r.future %}
-                <div class="research-future-item">
-                    <h3>{{ f.title }}</h3>
-                    <p>{{ f.text }}</p>
-                </div>
-                {% endfor %}
+        <div class="rs-converge" id="converge">
+            <div class="rs-converge-box">
+                <span class="rs-next-label">Where it leads</span>
+                <h2>{{ r.converge.title }}</h2>
+                {{ r.converge.text | markdownify }}
             </div>
+        </div>
+
+        <div class="rs-partners">
+            <span class="rs-partners-label">Built with</span>
+            {% for p in r.partners %}<span>{{ p }}</span>{% endfor %}
         </div>
     </div>
 </section>
