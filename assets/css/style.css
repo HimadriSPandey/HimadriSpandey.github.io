@@ -1608,6 +1608,18 @@ section.press-preview {
     background: var(--bg-light);
 }
 
+/* Stacked sections on one sub-page (e.g. publications + talks) */
+.subpage > section + section {
+    padding-top: 2rem;
+    min-height: 0;
+    scroll-margin-top: 60px;
+}
+
+.subpage > section:has(+ section) {
+    min-height: 0;
+    padding-bottom: 2rem;
+}
+
 .subpage .reveal {
     opacity: 1;
     transform: none;
