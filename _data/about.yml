@@ -29,12 +29,13 @@ links:
   - label: "CV (PDF)"
     url: "/assets/pdf/Pandey_Himadri_CV.pdf"
 
-# Selected recognition (at most four; the full list is in the CV)
+# Selected recognition (keep it short; the full list is in the CV)
 recognition:
   - "Finalist, Lee B. Lusted Student Prize Competition, SMDM, 2026"
   - "Winner, INFORMS MIF Student Poster Competition, 2024"
   - "Philip J. and Delores A. Scott Graduate Student Health and Wellness Award, ISyE, 2024&ndash;2026"
   - "George Family Fellowship for Research Excellence in Healthcare Systems, ISyE, 2024&ndash;2025"
+  - "David Cowan Scholarship, Georgia Chapter of HIMSS, 2024"
 
 # Recent updates (newest first; at most three).
 # Fields: date (YYYY-MM), content (Markdown), highlight (optional, for upcoming events),
@@ -44,9 +45,12 @@ news:
   - date: "2026-11"
     highlight: true
     expires: "2026-11-02"
-    content:
-      Presenting at the **INFORMS Annual Meeting** in San Francisco on Nov 1, in the Job Market
-      Showcase and in a session I co-chair. [Program details](/publications/#talks).
+    content: |
+      Presenting at the **INFORMS Annual Meeting** in San Francisco on Sun, Nov 1:
+      [Job Market Showcase](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=818)
+      (1:15 PM, Moscone South-203) and the session I co-chair,
+      [Sequential Decision Making for Patient Care](https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656)
+      (5:15 PM, Moscone South-105).
   - date: "2026-09"
     content:
       Georgia Tech Research News

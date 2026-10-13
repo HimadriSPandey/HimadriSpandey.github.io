@@ -9,7 +9,7 @@
         <li>
             <span class="entry-date">{{ item.date }}</span>
             <div>
-                <p class="entry-title">{{ item.text }}</p>
+                <p class="entry-title">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
                 {% if item.detail %}<p class="entry-meta">{{ item.detail | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
             </div>
         </li>

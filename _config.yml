@@ -24,7 +24,7 @@ social:
 
 # Bump this when CSS/JS/favicon change so browsers fetch the new files
 # (a fixed string keeps asset URLs stable across content-only rebuilds).
-asset_version: "2026-10-13c"
+asset_version: "2026-10-13d"
 
 # Build settings
 markdown: kramdown
