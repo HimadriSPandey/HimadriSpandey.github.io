@@ -12,10 +12,12 @@
     {% endif %}
     {% if site.author.dept %}<p class="profile-affiliation">{{ site.author.dept }}</p>{% endif %}
     <p class="profile-affiliation">{{ site.author.school }}</p>
+    {% if site.author.location %}
     <p class="profile-affiliation">
         <i class="fas fa-location-crosshairs"></i>
         {{ site.author.location }}
     </p>
+    {% endif %}
     <div style="margin: 1rem 0;"></div>
     <ul class="profile-links">
         {% if site.social.cv and site.social.cv != "" %}
