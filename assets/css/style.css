@@ -166,6 +166,21 @@ nav {
     font-weight: 700;
 }
 
+/* In the News: highlighted tab */
+.nav-links a.nav-news {
+    color: #ffffff;
+    background: var(--navy);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.nav-links a.nav-news:hover,
+.nav-links a.nav-news.active {
+    color: #ffffff;
+    background: var(--gold-text);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -221,6 +236,13 @@ nav {
         display: block;
         padding: 0.75rem 0;
         border-bottom: 1px solid var(--border-color);
+    }
+
+    .js .nav-links a.nav-news {
+        margin-top: 0.75rem;
+        padding: 0.6rem 0.9rem;
+        text-align: center;
+        border-bottom: none;
     }
 
     .no-js .nav-links {

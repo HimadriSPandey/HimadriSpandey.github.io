@@ -12,6 +12,7 @@
             <li><a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active" aria-current="page"{% endif %}>Publications</a></li>
             <li><a href="{{ '/teaching/' | relative_url }}"{% if page.url == '/teaching/' %} class="active" aria-current="page"{% endif %}>Teaching</a></li>
             <li><a href="{{ site.social.cv | relative_url }}">CV (PDF)</a></li>
+            <li><a href="{{ '/news/' | relative_url }}" class="nav-news{% if page.url == '/news/' %} active{% endif %}"{% if page.url == '/news/' %} aria-current="page"{% endif %}>In the News</a></li>
         </ul>
     </div>
 </nav>
