@@ -1,57 +1,105 @@
-# Research projects (shown on /research/, in this order)
-# Fields: title, tag (short label), question, approach, findings (list), partners, status, links (list of {label, url})
+# Research page content (shown on /research/, in this order)
+# Source: AcademicJobSearch/materials/research-statement/research_statement_master_v3_GG.docx
+# themes: each has title, lead, and projects
+#   project fields: question (short hook), title, tag, summary, highlights (list), status, links (list of {label, url})
+# future: list of {title, text}
 
-- title: "Who Gets Watched? Allocating Scarce Escalation Resources on Pediatric Wards"
-  tag: "Job Market Paper"
-  question: |
-    When several hospitalized children show signs of deterioration at once, who should receive
-    closer surveillance, a critical-care outreach assessment, or an ICU transfer, given that each
-    of these resources is limited?
-  approach: |
-    Hospitals typically manage each escalation pathway separately and rely on risk scores as
-    stand-alone decision rules. I model the ward as a multi-action restless bandit and develop
-    **MILOP** (Multi-action Index Learning and Optimization Policy), which trains a neural network
-    to produce a priority index for each patient and action, learned for the allocation decision
-    itself rather than for prediction accuracy alone.
-  findings:
-    - "In a retrospective evaluation of 101,277 ward episodes at Children's Healthcare of Atlanta, MILOP recommends escalation before **87.4%** of critical or emergent ICU transfers, versus 79.5% for the strongest practical baseline."
-    - "It does so while using **13.5% less** monitoring capacity."
-    - "It gives clinical teams a median of **19.2 hours** of lead time before transfer."
-    - "**99.3%** of MILOP's proactive transfer recommendations are preceded by surveillance or an outreach assessment, consistent with a controlled escalation of care."
-  partners: "Children's Healthcare of Atlanta; Pediatric Technology Center at Georgia Tech"
-  status: "Under review, Manufacturing & Service Operations Management"
+intro: |
+  When there is not enough time, money, or staff to go around, **who should get help, and what
+  kind of help?** A nurse can watch only so many children closely. A sideline clinician has only
+  minutes to decide whether an athlete can return to play. These decisions are connected:
+  gathering information takes time, care given to one person limits what is left for others, and
+  today's intervention changes tomorrow's needs.
 
-- title: "So Many Tests, So Little Time: Diagnostic Assessment under Time Constraints"
-  tag: "Published"
-  question: |
-    Clinicians diagnosing concussion on the sideline, in the emergency department, or in the
-    military often have minutes, not hours. Which tests should a diagnostic battery include when
-    time is the binding constraint?
-  approach: |
-    I formulate battery design as a chance-constrained mixed-integer program that builds an
-    interpretable diagnostic model while respecting a limit on (uncertain) administration time,
-    with reformulations that make it tractable at scale.
-  findings:
-    - "On data from the NCAA&ndash;DoD CARE Consortium, the designed batteries cut administration time by **more than 97%** compared with batteries used in practice."
-    - "They maintain high accuracy (**AUC above 0.93**)."
-  partners: "NCAA&ndash;DoD CARE Consortium"
-  status: "IISE Transactions (2026). Winner, INFORMS MIF Student Poster Competition (2024)."
-  links:
-    - label: "Paper"
-      url: "https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282"
+  I study how organizations should allocate scarce resources when needs evolve and information is
+  imperfect, combining **machine learning, optimization, and sequential decision-making**. I build
+  these models with the organizations that will use them, including clinicians at
+  **Children's Healthcare of Atlanta** and concussion experts in the **NCAA&ndash;DoD CARE
+  Consortium**, and I evaluate them on the measures those organizations manage: who is reached, how
+  early, and at what cost in staff time.
 
-- title: "Is Baseline Concussion Testing Worth It?"
-  tag: "Published"
-  question: |
-    Many athletic programs require pre-season baseline testing for every athlete, which costs
-    significant staff time. How much does that baseline actually improve post-injury diagnosis?
-  approach: |
-    Using the CARE Consortium's collegiate athlete data, we quantify the diagnostic value that
-    individual baselines add over assessing an injured athlete without one.
-  findings:
-    - "The results give athletic and medical programs evidence for deciding when universal baseline testing is worth its operational cost."
-  partners: "NCAA&ndash;DoD CARE Consortium"
-  status: "The American Journal of Sports Medicine (2025)"
-  links:
-    - label: "Paper"
-      url: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
+themes:
+  - title: "Allocating care under capacity limits"
+    lead: |
+      A hospitalized child's condition can worsen between routine checks. Wards can respond with
+      closer monitoring, an assessment by a specialist ICU team, or early ICU transfer, and each
+      response has its own limited capacity. Risk scores rank children, but a ranking alone does
+      not say who should receive which response when several children need attention at once.
+    projects:
+      - question: "Who gets watched?"
+        title: "Allocating Scarce Escalation Resources on Pediatric Wards with Neural Index Policies"
+        tag: "Job Market Paper"
+        summary: |
+          I model the ward as a multi-action restless bandit, in which children's conditions keep
+          changing whether or not they receive care. Because computing an optimal policy is
+          intractable at hospital scale, I develop a neural index policy that learns priorities
+          across patients and response types, then assigns responses within each capacity limit.
+          We are now planning deployment at CHOA, starting with a silent evaluation.
+        highlights:
+          - "Flags **87.4%** of children who later had a critical or emergent ICU transfer, vs. 79.5% for the best risk-ranking rule"
+          - "Uses **13.5% less** monitoring and outreach-team capacity"
+          - "Median lead time of **19.2 hours** before transfer"
+        status: "Under review, Manufacturing & Service Operations Management. Companion paper on early prediction of pediatric ICU transfer under review at INFORMS Journal on Data Science."
+
+  - title: "Deciding which information is worth its cost"
+    lead: |
+      Allocating care well depends on what clinicians know, and that information is itself costly
+      to collect. Using CARE Consortium data on 47,860 athletes and service academy cadets at 30
+      U.S. sites, I ask three questions about concussion diagnosis.
+    projects:
+      - question: "Who needs a baseline?"
+        title: "Quantifying the Diagnostic Utility of Baseline Testing in Concussion Management"
+        tag: "Published"
+        summary: |
+          Most collegiate programs test every athlete before the season to establish a healthy
+          baseline. But symptoms fluctuate from day to day, so a baseline can add noise as well as
+          information. Comparing classifiers built with and without baselines, I measure when an
+          athlete's baseline actually changes the diagnosis.
+        highlights:
+          - "For **86.7%** of concussed athletes, the baseline does not change the diagnosis"
+          - "At the same detection rate, routine pre-season testing uses nearly **600 staff hours per 1,000 athletes** and produces more than twice as many false positives as a simple symptom questionnaire (follow-up paper in preparation)"
+          - "Informed baseline-testing guidance for high schools in Athens, Georgia"
+        status: "The American Journal of Sports Medicine (2025)"
+        links:
+          - label: "Paper"
+            url: "https://journals.sagepub.com/doi/10.1177/03635465241298074"
+
+      - question: "Which tests fit in the time available?"
+        title: "So Many Tests, So Little Time: Diagnostic Assessment under Time Constraints"
+        tag: "Published"
+        summary: |
+          Clinicians often need a diagnosis before they can finish a full assessment. I formulate a
+          chance-constrained mixed-integer program that selects tests and fits an interpretable
+          diagnostic model together, treating each test's administration time as uncertain and
+          letting clinicians set both their time budget and the acceptable risk of exceeding it.
+          We are now extending this work to military settings.
+        highlights:
+          - "Cuts administration time by **more than 97%** compared with batteries used in practice, while maintaining high accuracy (AUC above 0.93)"
+        status: "IISE Transactions (2026). Winner, INFORMS MIF Student Poster Competition (2024)."
+        links:
+          - label: "Paper"
+            url: "https://www.tandfonline.com/doi/full/10.1080/24725854.2026.2684282"
+
+      - question: "Who gets which test?"
+        title: "Optimal Logistic Regression Trees for Cost-Aware Diagnosis"
+        tag: "In Preparation"
+        summary: |
+          Patient characteristics change which tests are informative and how results should be
+          read. I jointly choose how to group patients, which tests each group receives, and how
+          each group's results determine a diagnosis, solved exactly with a dynamic-programming
+          algorithm.
+        highlights:
+          - "Identifies athletes with a chronic medical condition as a distinct group with its own diagnostic model"
+          - "At least as accurate as a single model that uses every test"
+
+future_lead: |
+  Next, I will study how organizations allocate care when recommendations shape future responses,
+  information takes time to obtain, and support must continue beyond a first contact.
+
+future:
+  - title: "Allocating care when clinicians' responses evolve"
+    text: "How should hospitals prioritize clinical responses when clinicians' use of recommendations changes with workload and experience?"
+  - title: "Choosing what to learn before allocating care"
+    text: "How should an organization decide whom to assess next, and when to intervene, when both assessment and care use scarce capacity?"
+  - title: "Coordinating outreach and continuing mental health care"
+    text: "How should outreach teams serving people experiencing homelessness balance new contacts with follow-up, when ongoing care depends on capacity across organizations?"

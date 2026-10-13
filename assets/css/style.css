@@ -1108,6 +1108,89 @@ section.press-preview {
     margin-top: 0.75rem;
 }
 
+.research-intro p {
+    margin-bottom: 0.9rem;
+}
+
+.research-theme {
+    max-width: 900px;
+    margin-top: 3rem;
+}
+
+.research-theme-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.research-theme-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.research-theme-lead {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.research-question {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--primary-color) !important;
+    margin-bottom: 0.25rem;
+}
+
+.research-card .research-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.research-card .research-findings {
+    margin-top: 0.75rem;
+}
+
+.research-future {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.research-future-item {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1.1rem 1.25rem;
+}
+
+.research-future-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+}
+
+.research-future-item p {
+    font-size: 0.93rem;
+    color: var(--text-muted);
+}
+
 /* Practice & Industry */
 .impact-grid {
     display: grid;
@@ -1166,6 +1249,14 @@ section.press-preview {
 
     .research-card {
         padding: 1.25rem;
+    }
+
+    .research-future {
+        grid-template-columns: 1fr;
+    }
+
+    .research-theme-title {
+        font-size: 1.4rem;
     }
 
     .impact-grid {
