@@ -276,7 +276,7 @@ nav {
 
 .bio p {
     margin-bottom: 1rem;
-    font-size: 1.08rem;
+    font-size: 1.22rem;
     color: var(--text-dark);
 }
 
@@ -1729,7 +1729,7 @@ section.press-preview {
     }
 
     body.home .bio p {
-        font-size: 1.08rem;
+        font-size: 1.22rem;
         margin-bottom: 0.6rem;
         line-height: 1.55;
     }
