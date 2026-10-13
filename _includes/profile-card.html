@@ -10,7 +10,7 @@
     </p>
     {% endfor %}
     {% endif %}
-    <p class="profile-affiliation">{{ site.author.dept }}</p>
+    {% if site.author.dept %}<p class="profile-affiliation">{{ site.author.dept }}</p>{% endif %}
     <p class="profile-affiliation">{{ site.author.school }}</p>
     <p class="profile-affiliation">
         <i class="fas fa-location-crosshairs"></i>
