@@ -13,6 +13,12 @@
   venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=656"
   title: "Neural Index Policies for Restless Multi-Action Bandits with Heterogeneous Budgets"
 
+- date: "Nov 2026"
+  type: "Co-authored Talk (presented by Jade Li)"
+  venue: "INFORMS Annual Meeting, San Francisco"
+  venue_url: "https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/EventDetail.aspx?evt=620"
+  title: "A Chance-Constrained Optimization Approach for Interpretable Concussion Diagnostics under Time Constraints"
+
 - date: "2026"
   type: "Invited Talk"
   venue: "INFORMS Healthcare Conference"

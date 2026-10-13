@@ -60,7 +60,7 @@
                 <h3>Recent Updates</h3>
                 <ul class="news-list">
                     {% for item in site.data.about.news %}
-                    <li>
+                    <li{% if item.highlight %} class="news-highlight"{% endif %}>
                         <span class="news-date">[{{ item.date }}]</span>
                         {{ item.content | markdownify | remove: '<p>' | remove: '</p>' }}
                     </li>

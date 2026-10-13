@@ -52,6 +52,7 @@
     --accent: #4fc3f7;
     --news-color: #1f3a5f;
     --news-tint: #eef2f7;
+    --news-highlight: #c62828;
 }
 
 * {
@@ -319,6 +320,16 @@ nav {
     color: var(--primary-color);
     font-weight: 500;
     margin-right: 0.5rem;
+}
+
+.news-list li.news-highlight,
+.news-list li.news-highlight a,
+.news-list li.news-highlight .news-date {
+    color: var(--news-highlight);
+}
+
+.news-list li.news-highlight a {
+    text-decoration: underline;
 }
 
 /* Sections */
