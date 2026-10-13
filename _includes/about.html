@@ -52,11 +52,13 @@
             {% endif %}
         </div>
 
-        <div class="bio">
-            {{ site.data.about.content | markdownify }}
+        <div class="landing-main">
+            <div class="bio">
+                {{ site.data.about.content | markdownify }}
+            </div>
 
             {% if site.data.about.news and site.data.about.news.size > 0 %}
-            <div class="news-section">
+            <aside class="news-section">
                 <h3>Recent Updates</h3>
                 <ul class="news-list">
                     {% for item in site.data.about.news %}
@@ -66,8 +68,10 @@
                     </li>
                     {% endfor %}
                 </ul>
-            </div>
+            </aside>
             {% endif %}
+
+            {% include impact.html %}
         </div>
     </div>
 </section>
