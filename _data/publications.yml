@@ -67,6 +67,24 @@
   category: [method]
 
 - title: |
+    Optimal Logistic Regression Trees for Cost-Aware Diagnosis
+  year: 2026
+  status: working
+  authors:
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+  venue: In Preparation
+
+- title: |
+    What Is the Impact of Impact?
+  year: 2026
+  status: working
+  authors:
+    - Himadri S. Pandey
+    - Gian-Gabriel P. Garcia
+  venue: In Preparation
+
+- title: |
     So Many Tests, So Little Time: Operationally Constrained Machine Learning for Diagnostic Assessment under Time Constraints
   year: 2026
   status: journal

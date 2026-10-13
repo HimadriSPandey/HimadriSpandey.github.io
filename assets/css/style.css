@@ -403,7 +403,7 @@ section:nth-child(even) {
 .pub-group-title {
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--news-color);
+    color: var(--primary-color);
     margin: 2rem 0 0.5rem;
 }
 
