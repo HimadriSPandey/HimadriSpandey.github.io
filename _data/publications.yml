@@ -52,7 +52,7 @@
     - Naveen Muthu
     - Gian-Gabriel P. Garcia
     - Kai Wang
-  venue: Submitted to INFORMS Journal on Data Science
+  venue: Under review at INFORMS Journal on Data Science (IJDS)
 
 - id: rank-then-allocate
   title: |
@@ -66,18 +66,37 @@
 
 - id: cost-aware-trees
   title: |
-    Optimal Logistic Regression Trees for Cost-Aware Diagnosis
+    Who Gets Which Test? Optimal Logistic Regression Trees for Cost-Aware Diagnosis
   year: 2026
   status: working
   authors:
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
-  venue: In preparation
+  venue: In preparation for submission to Manufacturing & Service Operations Management (M&SOM)
   abstract: |
     Jointly chooses how to group patients, which tests each group receives, and how each group's
     results determine a diagnosis, solved exactly by dynamic programming. Preliminary concussion
     results identify athletes with chronic medical conditions as a distinct group with its own
     diagnostic model.
+
+- id: accuracy-calibration-cadets
+  title: |
+    Accuracy&ndash;Calibration Tradeoffs in an Operationally Constrained Machine Learning Model for Concussion Risk Prediction Among Service Academy Cadets
+  year: 2026
+  status: working
+  authors:
+    - Jade Li
+    - Himadri S. Pandey
+    - Panus Sawetpiyakul
+    - Shan Liu
+    - Landon B. Lempke
+    - Steven P. Broglio
+    - Thomas W. McAllister
+    - Michael A. McCrea
+    - Paul F. Pasquina
+    - CARE Consortium Investigators
+    - Gian-Gabriel P. Garcia
+  venue: In preparation
 
 # Hidden until its question, contribution, and status can be described:
 # - id: impact-of-impact
@@ -158,7 +177,7 @@
   year: 2023
   status: chapter
   authors:
-    - Seung Ji Lee
+    - Sun Ju Lee
     - Himadri S. Pandey
     - Gian-Gabriel P. Garcia
   venue: Encyclopedia of Optimization (3rd ed.), Springer
